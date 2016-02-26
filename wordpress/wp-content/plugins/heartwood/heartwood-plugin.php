@@ -42,7 +42,7 @@ class hw_widget extends WP_Widget {
 			$title = $instance[ 'title' ];
 		}
 		else {
-			$title = __( 'New title', 'hw_cal' );
+			$title = __( 'Events', 'hw_cal' );
 		}
 		?>
 		<!-- Widget admin form -->

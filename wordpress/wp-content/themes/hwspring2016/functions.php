@@ -114,6 +114,15 @@ function heartwood_header_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
+
+        wp_register_script('react', get_template_directory_uri() . '/js/lib/react.js', array(), '0.14.7');
+        wp_enqueue_script('react');
+        wp_register_script('react-dom', get_template_directory_uri() . '/js/lib/react-dom.js', array(), '0.14.7');
+        wp_enqueue_script('react');
+
+        wp_register_script('conditionizr', get_template_directory_uri() . '/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0'); // Conditionizr
+        wp_enqueue_script('conditionizr'); // Enqueue it!
+
         wp_register_script('heartwoodscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('heartwoodscripts'); // Enqueue it!
     }

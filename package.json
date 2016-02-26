@@ -1,0 +1,38 @@
+{
+  "name": "heartwood",
+  "version": "1.0.0",
+  "description": "Website for Heartwood Montessori School",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap-less": "^3.3.8",
+    "gulp-copy": "^0.0.2",
+    "gulp-less": "^3.0.5",
+    "jquery": "^2.2.0",
+    "less-plugin-clean-css": "^1.5.1",
+    "react-dom": "^0.14.7",
+    "webpack": "^1.12.14"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.3",
+    "babel-preset-react": "^6.5.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-react": "^3.1.0",
+    "gulp-uglify": "^1.5.3",
+    "less-loader": "^2.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmchase/heartwood.git"
+  },
+  "author": "Cory Chase",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmchase/heartwood/issues"
+  },
+  "homepage": "https://github.com/cmchase/heartwood#readme"
+}
