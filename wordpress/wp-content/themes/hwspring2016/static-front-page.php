@@ -135,18 +135,10 @@
 					<a href="#" class="activity-more">
 						<span class="icon"></span>View All News 
 					</a>
-
-					<div id="app"></div>
+					
 				</article>
 
 		</section>
-
-
-
-
-    <script src="<?= get_template_directory_uri(); ?>/js/child.js"></script>
-    <script src="<?= get_template_directory_uri(); ?>/js/parent.js"></script>
-    <script src="<?= get_template_directory_uri(); ?>/js/app.js"></script>
 
 	</main>
 

@@ -1,5 +1,5 @@
 (function ($, root, undefined) {
-	// Don't go crazy firing callbacks
+	// Don't go crazy firing callbacks  
 	// https://davidwalsh.name/javascript-debounce-function
 	function debounce(func, wait, immediate) {
 		var timeout;
@@ -69,8 +69,8 @@
 			}, 200);
 		};
 		// Some hacky business for the upcoming events until React is added.
-		$("#upcomingEvents").html($("#upcomingEventsTpl").html());
-		
+		//$("#upcomingEvents").html($("#upcomingEventsTpl").html());
+ 		
 		sizeHeader();
 		window.addEventListener('resize', resizeCallback)
 		window.addEventListener('scroll', stickyHeader);
