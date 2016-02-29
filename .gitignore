@@ -216,9 +216,15 @@ pip-log.txt
 .mr.developer.cfg
 
 
-#############
-## Custom
-#############
+##########################
+## Custom Ignore
+##########################
 npm/
 node_modules/
 src/
+
+
+##########################
+## Custom Allow
+##########################
+!wordpress/**/*
