@@ -114,8 +114,6 @@ function heartwood_header_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
-        wp_register_script('gapiClient', get_template_directory_uri() . '/js/gapiClient.js', array(), '1'); // Conditionizr
-        wp_enqueue_script('gapiClient'); // Enqueue it!
 
     }
 }
@@ -127,8 +125,11 @@ function heartwood_footer_scripts()
 
         wp_register_script('bundle', get_template_directory_uri() . '/js/bundle.js', array(), '1.0.0');
         wp_enqueue_script('bundle'); 
+        wp_register_script('gapiClient', get_template_directory_uri() . '/js/gapiClient.js', array(), '1'); // Conditionizr
+        wp_enqueue_script('gapiClient'); // Enqueue it!
         wp_register_script('gapi', 'https://apis.google.com/js/client.js?onload=gapiOnLoadCallback', array(), '1');
         wp_enqueue_script('gapi'); 
+        
 
     }
 }

@@ -4164,12 +4164,15 @@ html.lt-ie9 .main-footer .footer-branding {
 }
 .splash-row-intro .events-col .activity-title {
   display: block;
+  font-weight: 700;
   margin-left: 60px;
   line-height: 1.1em;
 }
 .splash-row-intro .events-col .activity-time {
+  bottom: 0;
   color: #656263;
-  float: right;
+  position: absolute;
+  right: 0;
 }
 .splash-row-intro .events-col .activity-more {
   color: #6cacc4;
@@ -4369,12 +4372,15 @@ html.lt-ie9 .main-footer .footer-branding {
 }
 .splash-row-posts .activity-title {
   display: block;
+  font-weight: 700;
   margin-left: 60px;
   line-height: 1.1em;
 }
 .splash-row-posts .activity-time {
+  bottom: 0;
   color: #656263;
-  float: right;
+  position: absolute;
+  right: 0;
 }
 .splash-row-posts .activity-more {
   color: #3bb54a;
@@ -4810,12 +4816,15 @@ body.single-post .post-sidebar .activity-date .date {
 }
 body.single-post .post-sidebar .activity-title {
   display: block;
+  font-weight: 700;
   margin-left: 60px;
   line-height: 1.1em;
 }
 body.single-post .post-sidebar .activity-time {
+  bottom: 0;
   color: #656263;
-  float: right;
+  position: absolute;
+  right: 0;
 }
 body.single-post .post-sidebar .activity-more {
   color: #6cacc4;
@@ -4959,12 +4968,15 @@ body.page .page-sidebar #upcomingEvents .activity-date .date {
 }
 body.page .page-sidebar #upcomingEvents .activity-title {
   display: block;
+  font-weight: 700;
   margin-left: 60px;
   line-height: 1.1em;
 }
 body.page .page-sidebar #upcomingEvents .activity-time {
+  bottom: 0;
   color: #656263;
-  float: right;
+  position: absolute;
+  right: 0;
 }
 body.page .page-sidebar #upcomingEvents .activity-more {
   color: #6cacc4;
