@@ -105,23 +105,28 @@
 		.clearfix();
 		display: block;
 		float: left;
+		min-height: @size;
 		margin-bottom: 20px;
 		padding-left: 10px;
 		width: 100%;
 		position: relative;
 	}
-	.activity-link {
+	.activity-link,
+	.activity-wrapper {
 		.clearfix();
 		color: @color-gray;
 		display: block;
 		min-height: @size;
 		position: relative;
-		text-decoration: none;
-			&:hover {
-				.activity-date {
-					background-color: darken(@color, 20%);
-				}
+		text-decoration: none;			
+	}
+	.activity-link {
+		&:hover {
+			background-color: lighten(@color, 50%);
+			.activity-date {
+				background-color: darken(@color, 20%);
 			}
+		}
 	}
 	.activity-date(@color, @size);
 	.activity-title{
@@ -150,7 +155,6 @@
 	}
 }
 
-
 .text-shadow(@color) {
 	text-shadow: 1px 1px 0 @color;
 }
@@ -166,18 +170,6 @@
 		}
 	}
 };
-
-.read-more {
-	padding-right: 15px;
-	position: relative;
-	.icon {
-		.glyphicon();
-		position: absolute;
-		right: -5px;
-		top: 2px;
-	}
-}
-
 
 /*------------------------------------*\
     Utilities
@@ -235,7 +227,7 @@ html, body {
 }
 
 h1, h2, h3, h4, a{
-	.text-shadow(#fff);
+	.text-shadow(rgba(255,255,255,.5));
 }
 
 a {
@@ -441,14 +433,17 @@ button {
 	.make-row(0);
 }
 .hero {
+	.make-default-column(12);
+	background-color: @color-green-base;
 	border-top: 1px solid @color-gray-light;
 	border-bottom: 1px solid @color-gray-light;
-	.make-default-column(12);
 	padding: 0;
+	text-align: center;
 	img {
 		border-top: 1px solid #fff;
 		border-bottom: 1px solid #fff;
 		.img-responsive();
+		display: inline-block;
 	}
 	&.hero-header {
 		border-top: 0;
@@ -531,8 +526,12 @@ button {
 		.telephone {
 			.media-lg({
 				.link-colors(@text-color);
-				a:hover {
+				a {
 					text-decoration: none;
+					text-shadow: none;
+					&:hover {
+						text-decoration: none;
+					}
 				}
 			});
 			.icon {
@@ -559,10 +558,10 @@ button {
 		font-size: 1.15em;
 		font-weight: 600;
 		margin-top: 10px;
-		.text-shadow(darken(@color-blue-dark, 15%));
 		a {
 			color: #fff;
 			text-decoration: none;
+			.text-shadow(darken(@color-blue-dark, 15%));
 			&:hover {
 				text-decoration: underline;
 			}
@@ -617,7 +616,32 @@ button {
 	}
 }
 
+.read-more {
+	padding-right: 15px;
+	position: relative;
+	.icon {
+		.glyphicon();
+		position: absolute;
+		right: -5px;
+		top: 2px;
+	}
+}
 
+// Placeholder for React Component
+#upcomingEvents {
+	min-height: 250px;
+	position: relative;
+}
+
+// Loading animation for React event component
+.loading-event-list {
+	background: url(../../img/loading.gif) center center no-repeat;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
 /*------------------------------------*\
     Splash page
 \*------------------------------------*/
@@ -792,8 +816,6 @@ button {
 	}
 }
 
-
-
 /*------------------------------------*\
     Posts
 \*------------------------------------*/
@@ -823,7 +845,7 @@ body.single-post {
 	}
 
 	.post-details {
-		.make-default-column(3);
+		.make-default-column(2);
 		.padded-col();
 		.activity-date(@color-green-base, 100px);
 		.activity-date {
@@ -833,53 +855,64 @@ body.single-post {
 	}
 
 	.post-content {
-		.make-default-column(6);
+		.make-default-column(7);
 		.padded-col();
 	}
 
 	.post-sidebar {
 		.make-default-column(3);
 		.padded-col();
-		.activity-list(@color-blue-base);
-
-		.icon {
-			.glyphicon-calendar();
-		}
 	} 
 }
-
-// .post-content, .page-content, .content-header {
-// 	.make-default-column(12);
-// }
-
-
 
 /*------------------------------------*\
     Single Page
 \*------------------------------------*/
 
 body.page {
-
 	.page-content {
-		.make-default-column(6);
+		.make-default-column(8);
+		.make-md-column-offset(1);
 		.padded-col();
 	}
 	.page-sidebar {
 		.make-default-column(3);
-		.padded-col();
-		#upcomingEvents {
-			.make-row(0);
-			.activity-list(@color-blue-base);
-			.icon {
-				.glyphicon-calendar();
-			}
-		}
+		.padded-col();		
 	}
 }
 
 /*------------------------------------*\
+    Sidebars
+\*------------------------------------*/
+.widget_search,
+.widget_hw_cal,
+.widget_hw_posts {
+	.clearfix();
+	display: block;
+	clear: both;
+	margin-bottom: 20px;
+}
+.widget_hw_cal {
+	.activity-list(@color-blue-base);
+	.icon {
+		.glyphicon-calendar();
+	}
+}
+
+.widget_hw_posts {
+	.activity-list(@color-green-base);
+	.icon {
+		.glyphicon-list-alt();
+	}
+}
+
+
+
+/*------------------------------------*\
     MISC
 \*------------------------------------*/
+
+
 
 ::selection {
 	background:#04A4CC;

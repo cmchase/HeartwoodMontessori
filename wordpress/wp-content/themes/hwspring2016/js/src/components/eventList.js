@@ -12,7 +12,7 @@ var EventList = React.createClass({
       }.bind(this);
 
       this.setState({
-          events: gapiClient.listUpcomingEvents(5, set)
+          events: gapiClient.listUpcomingEvents(4, set)
       });
     }.bind(this);
   },
@@ -26,7 +26,7 @@ var EventList = React.createClass({
     var eventItems = [];
     if (typeof events === 'undefined' || events.length === 0) {
       console.log('no events')
-      return (<div className="loading"></div>);
+      return (<div className="loading-event-list"></div>);
     } else {
       for (var i = 0; i < events.length; i++){
         var event = events[i];

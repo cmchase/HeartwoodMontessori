@@ -3,7 +3,8 @@ function gapiOnLoadCallback() {
 	gapi.client.setApiKey('AIzaSyDtszoE6zAROJye9g5ejxi-5wR9ylpKNyM');
 	gapi.client.load('calendar', 'v3', function() {
 		// This has a smell to it. I don't like the hard-coded
-		// callback -- I should either use PubSub when time allows
+		// callback -- I should either use a PubSub or React Flux
+		// when time allows
 		if (typeof window.eventListCallback !== 'undefined') {
 			eventListCallback();
 		};

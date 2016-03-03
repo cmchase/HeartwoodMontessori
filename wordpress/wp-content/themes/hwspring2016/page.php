@@ -2,9 +2,6 @@
 
 <main class="main-content" role="main">
 
-	<section class="page-sidebar">
-	</section>
-
 	<section class="page-content">
 
 		<h1><?php the_title(); ?></h1>

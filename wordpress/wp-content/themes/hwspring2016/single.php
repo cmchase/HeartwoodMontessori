@@ -16,32 +16,29 @@
 
 	<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
 		<section class="hero">
-			<?php the_post_thumbnail();
-				echo "<span class='caption'><span class='caption-text'>" . get_post(get_post_thumbnail_id())->post_excerpt . "</span></span>"; ?>
+		<?php 
+			the_post_thumbnail(); 
+			if (has_excerpt(get_post_thumbnail_id())) {
+					echo "<span class='caption'><span class='caption-text'>" . get_post(get_post_thumbnail_id())->post_excerpt . "</span></span>";
+				}
+		?>
 		</section>
 	<?php endif; ?>
 
+	<section class="post-details">
+		<span class="activity-date">
+			<span class="day"><?= the_time('D'); ?></span>
+			<span class="month"><?= the_time('M'); ?></span>
+			<span class="date"><?= the_time('j'); ?></span>
+		</span>
+	</section>
 		
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-		<section class="post-details">
-			<span class="activity-date">
-				<span class="day"><?= the_time('D'); ?></span>
-				<span class="month"><?= the_time('M'); ?></span>
-				<span class="date"><?= the_time('j'); ?></span>
-			</span>
-		</section>
-		<section class="post-content">
+	<section class="post-content">
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<?php the_content(); // Dynamic Content ?>
-
-
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-		</section>
-		
-		
-
-
-	</article>
+		</article>
+	</section>
 
 	<?php endwhile; ?>
 
@@ -54,6 +51,10 @@
 	</article>
 
 <?php endif; ?>
+
+	<section class="post-sidebar">
+		<?php get_sidebar(); ?>
+	</section>
 
 </main>
 

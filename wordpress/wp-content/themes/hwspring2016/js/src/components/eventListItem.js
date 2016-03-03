@@ -9,7 +9,7 @@ var EventListItem = React.createClass({
 
     return (
       <li className="activity-item">
-        <a href="#" className="activity-link">
+        <div className="activity-wrapper">
           <span className="activity-date">
             <span className="day">{hw.daysAbbr[start.getDay()]}</span>
             <span className="month">{hw.monthsAbbr[start.getMonth()]}</span>
@@ -17,7 +17,7 @@ var EventListItem = React.createClass({
           </span>
           <span className="activity-title">{summary}</span>
           <span className="activity-time">{hw.getTime(start)} - {hw.getTime(end)}</span>
-        </a>
+        </div>
       </li>
     )
   }
