@@ -4793,6 +4793,24 @@ body.page .page-sidebar {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+body.page-template-page-full .page-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  body.page-template-page-full .page-content {
+    margin-left: 0%;
+  }
+}
+.event-calendar body {
+  background-color: transparent;
+}
 /*------------------------------------*\
     Sidebars
 \*------------------------------------*/

@@ -102,7 +102,7 @@ class hw_custom_post_list_widget extends WP_Widget {
 				</li>
  			<?php wp_reset_query(); endwhile; ?>
 			</ul>
-			<a href="#" class="activity-more">
+			<a href="<?php echo get_permalink(135) ?>" class="activity-more">
 				<span class="icon"></span>View All News 
 			</a>
 		<?php endif; echo $args['after_widget'];

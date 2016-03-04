@@ -422,6 +422,7 @@ add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
 
 // Shortcodes
+add_shortcode('hw_google_cal', 'hw_google_cal_shortcode');
 add_shortcode('html5_shortcode_demo', 'html5_shortcode_demo'); // You can place [html5_shortcode_demo] in Pages, Posts now.
 add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [html5_shortcode_demo_2] in Pages, Posts now.
 
@@ -510,6 +511,29 @@ function hw_meta_boxes( $meta_boxes ) {
 /*------------------------------------*\
 	ShortCode Functions
 \*------------------------------------*/
+function hw_google_cal_shortcode() {
+    // $calId = '';
+    // return '<iframe src="https://calendar.google.com/calendar/embed?src=&ctz=America/New_York" class="event-calendar" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>';
+    $calId = 'heartwoodmontessori.com_5m7fci1sql1nmfsp1dc3lk69n0%40group.calendar.google.com';
+    $height = '600';
+    $width = '100%';
+    $bg = 'f6f6f6';
+    $color = 'ff0000';
+    $mode = 'MONTH'; // MONTH, AGENDA, WEEK
+    return '<iframe id="googleCalIframe" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;' 
+    . 'height=600&amp;wkst=1&amp;mode='
+    . $mode
+    . '&amp;bgcolor=%23' 
+    . $bg 
+    .'&amp;src=' 
+    . $calId 
+    . '&amp;color=%23'
+    . $color
+    . '&amp;ctz=America%2FNew_York" style="border-width:0" width="' 
+    . $width
+    . '" height="600" frameborder="0" scrolling="no"></iframe>';
+}
+
 
 // Shortcode Demo with Nested Capability
 function heartwood_shortcode_demo($atts, $content = null)

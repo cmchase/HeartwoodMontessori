@@ -25,7 +25,6 @@ var EventList = React.createClass({
     var events = this.state.events;
     var eventItems = [];
     if (typeof events === 'undefined' || events.length === 0) {
-      console.log('no events')
       return (<div className="loading-event-list"></div>);
     } else {
       for (var i = 0; i < events.length; i++){
@@ -37,7 +36,7 @@ var EventList = React.createClass({
           <ul className="activity-list">
             {eventItems}
           </ul>
-          <a href="#" className="activity-more">
+          <a href="/parent-resources/event-calendar/" className="activity-more">
             <span className="icon"></span>View All Events
           </a>
         </div>
