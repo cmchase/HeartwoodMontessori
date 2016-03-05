@@ -56,6 +56,7 @@
 .activity-date(@color, @size) {
 	.activity-date{
 		background-color: @color;
+		border-radius: 50%;
 		color: #fff;
 		display: inline-block;
 		left: 0;
@@ -72,7 +73,7 @@
 			position: absolute;
 			position: absolute;
 			right: 0;
-			top: 0;
+			top: 2px;
 		}
 		.month{
 			font-size: @size * .35; //16px;
@@ -81,10 +82,10 @@
 			position: absolute;
 			position: absolute;
 			right: 0;
-			top: @size * .25;
+			top: @size * .275;
 		}
 		.date{
-			bottom: 0; 
+			bottom: 1px; 
 			font-size: @size * .4;
 			line-height: 1em;
 			left: 0; 
@@ -866,8 +867,56 @@ body.single-post {
 }
 
 /*------------------------------------*\
-    Single Page
+    Standard & Single Page
 \*------------------------------------*/
+
+// Search, Archive, Category
+.page-content {
+	.make-default-column(6);
+	.make-md-column-offset(3);
+	.padded-col();
+	.entry-list-item {
+		position: relative;
+		min-height: 120px;
+	}
+	.type-page {
+		@color: @color-brown-base;
+		a {
+			color: @color;
+		}
+		.activity-date {
+			display: none;
+		}
+		.author-info {
+			display: none;
+		}
+	}
+	.type-post {
+		@color: @color-green-base;
+		a {
+			color: @color;
+		}
+		.activity-list(@color);
+		.author-info {
+			clear: both;
+			display: block;
+		}
+	}
+	.entry-details {
+		position: absolute;
+		left: -175px;
+		top: 20px;
+		.activity-date {
+			right: -10px;
+			left: auto;
+			top: -10px;
+		}
+	}
+}
+.page-sidebar {
+	.make-default-column(3);
+	.padded-col();		
+}
 
 body.page {
 	.page-content {

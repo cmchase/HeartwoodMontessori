@@ -4,7 +4,7 @@
 		<!-- section -->
 		<section class="post-content">
 		
-			<h1><?php _e( 'Latest Posts', 'heartwood' ); ?></h1>
+			<h1><?php _e( 'Latest Posts', 'heartwood' ); ?> !!</h1>
 
 			<?php get_template_part('loop'); ?>
 

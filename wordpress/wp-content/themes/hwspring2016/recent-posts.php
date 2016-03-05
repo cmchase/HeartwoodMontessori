@@ -6,10 +6,6 @@
 	
 		<h1><?php the_title(); ?></h1>
 
-	<?php
-		$debut = 0; //The first article to be displayed
-	?>
-
 	<?php if (have_posts()): while(have_posts()) : the_post(); ?>
 		<ul>
 			<?php
@@ -21,15 +17,15 @@
 		</ul>
 	<?php endwhile; ?>
 
-<?php else: ?>
+	<?php else: ?>
 
-<!-- article -->
-<article>
-	<h2><?php _e( 'Sorry, nothing to display.', 'heartwood' ); ?></h2>
-</article>
-<!-- /article -->
+	<!-- article -->
+	<article>
+		<h2><?php _e( 'Sorry, nothing to display.', 'heartwood' ); ?></h2>
+	</article>
+	<!-- /article -->
 
-<?php endif; ?>
+	<?php endif; ?>
 
 
 	</section>

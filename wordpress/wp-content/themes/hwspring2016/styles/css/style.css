@@ -4159,6 +4159,7 @@ html.lt-ie9 .main-footer .footer-branding {
 }
 .splash-row-intro .events-col .activity-date {
   background-color: #6cacc4;
+  border-radius: 50%;
   color: #fff;
   display: inline-block;
   left: 0;
@@ -4175,7 +4176,7 @@ html.lt-ie9 .main-footer .footer-branding {
   line-height: 1em;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 2px;
 }
 .splash-row-intro .events-col .activity-date .month {
   font-size: 17.5px;
@@ -4183,10 +4184,10 @@ html.lt-ie9 .main-footer .footer-branding {
   line-height: 1em;
   position: absolute;
   right: 0;
-  top: 12.5px;
+  top: 13.75px;
 }
 .splash-row-intro .events-col .activity-date .date {
-  bottom: 0;
+  bottom: 1px;
   font-size: 20px;
   line-height: 1em;
   left: 0;
@@ -4378,6 +4379,7 @@ html.lt-ie9 .main-footer .footer-branding {
 }
 .splash-row-posts .activity-date {
   background-color: #3bb54a;
+  border-radius: 50%;
   color: #fff;
   display: inline-block;
   left: 0;
@@ -4394,7 +4396,7 @@ html.lt-ie9 .main-footer .footer-branding {
   line-height: 1em;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 2px;
 }
 .splash-row-posts .activity-date .month {
   font-size: 17.5px;
@@ -4402,10 +4404,10 @@ html.lt-ie9 .main-footer .footer-branding {
   line-height: 1em;
   position: absolute;
   right: 0;
-  top: 12.5px;
+  top: 13.75px;
 }
 .splash-row-posts .activity-date .date {
-  bottom: 0;
+  bottom: 1px;
   font-size: 20px;
   line-height: 1em;
   left: 0;
@@ -4707,6 +4709,7 @@ body.single-post .post-details {
 }
 body.single-post .post-details .activity-date {
   background-color: #3bb54a;
+  border-radius: 50%;
   color: #fff;
   display: inline-block;
   left: 0;
@@ -4723,7 +4726,7 @@ body.single-post .post-details .activity-date .day {
   line-height: 1em;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 2px;
 }
 body.single-post .post-details .activity-date .month {
   font-size: 35px;
@@ -4731,10 +4734,10 @@ body.single-post .post-details .activity-date .month {
   line-height: 1em;
   position: absolute;
   right: 0;
-  top: 25px;
+  top: 27.5px;
 }
 body.single-post .post-details .activity-date .date {
-  bottom: 0;
+  bottom: 1px;
   font-size: 40px;
   line-height: 1em;
   left: 0;
@@ -4766,8 +4769,197 @@ body.single-post .post-sidebar {
   margin-top: 20px;
 }
 /*------------------------------------*\
-    Single Page
+    Standard & Single Page
 \*------------------------------------*/
+.page-content {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .page-content {
+    margin-left: 25%;
+  }
+}
+.page-content .entry-list-item {
+  position: relative;
+  min-height: 120px;
+}
+.page-content .type-page a {
+  color: #c49a6c;
+}
+.page-content .type-page .activity-date {
+  display: none;
+}
+.page-content .type-page .author-info {
+  display: none;
+}
+.page-content .type-post a {
+  color: #3bb54a;
+}
+.page-content .type-post .activity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page-content .type-post .activity-item {
+  display: block;
+  float: left;
+  min-height: 50px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  width: 100%;
+  position: relative;
+}
+.page-content .type-post .activity-item:before,
+.page-content .type-post .activity-item:after {
+  content: " ";
+  display: table;
+}
+.page-content .type-post .activity-item:after {
+  clear: both;
+}
+.page-content .type-post .activity-item:before,
+.page-content .type-post .activity-item:after {
+  content: " ";
+  display: table;
+}
+.page-content .type-post .activity-item:after {
+  clear: both;
+}
+.page-content .type-post .activity-link,
+.page-content .type-post .activity-wrapper {
+  color: #656263;
+  display: block;
+  min-height: 50px;
+  position: relative;
+  text-decoration: none;
+}
+.page-content .type-post .activity-link:before,
+.page-content .type-post .activity-wrapper:before,
+.page-content .type-post .activity-link:after,
+.page-content .type-post .activity-wrapper:after {
+  content: " ";
+  display: table;
+}
+.page-content .type-post .activity-link:after,
+.page-content .type-post .activity-wrapper:after {
+  clear: both;
+}
+.page-content .type-post .activity-link:before,
+.page-content .type-post .activity-wrapper:before,
+.page-content .type-post .activity-link:after,
+.page-content .type-post .activity-wrapper:after {
+  content: " ";
+  display: table;
+}
+.page-content .type-post .activity-link:after,
+.page-content .type-post .activity-wrapper:after {
+  clear: both;
+}
+.page-content .type-post .activity-link:hover {
+  background-color: #f4fbf5;
+}
+.page-content .type-post .activity-link:hover .activity-date {
+  background-color: #22682b;
+}
+.page-content .type-post .activity-date {
+  background-color: #3bb54a;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  left: 0;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 0 #22682b;
+  top: 0;
+  width: 50px;
+}
+.page-content .type-post .activity-date .day {
+  font-size: 12.5px;
+  left: 0;
+  line-height: 1em;
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+.page-content .type-post .activity-date .month {
+  font-size: 17.5px;
+  left: 0;
+  line-height: 1em;
+  position: absolute;
+  right: 0;
+  top: 13.75px;
+}
+.page-content .type-post .activity-date .date {
+  bottom: 1px;
+  font-size: 20px;
+  line-height: 1em;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.page-content .type-post .activity-title {
+  display: block;
+  font-weight: 700;
+  margin-left: 60px;
+  line-height: 1.1em;
+}
+.page-content .type-post .activity-time {
+  bottom: 0;
+  color: #656263;
+  position: absolute;
+  right: 0;
+}
+.page-content .type-post .activity-more {
+  color: #3bb54a;
+  float: right;
+  padding-left: 20px;
+  position: relative;
+}
+.page-content .type-post .activity-more .icon {
+  position: relative;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  left: -5px;
+  position: absolute;
+  top: 1px;
+}
+.page-content .type-post .author-info {
+  clear: both;
+  display: block;
+}
+.page-content .entry-details {
+  position: absolute;
+  left: -175px;
+  top: 20px;
+}
+.page-content .entry-details .activity-date {
+  right: -10px;
+  left: auto;
+  top: -10px;
+}
+.page-sidebar {
+  position: relative;
+  float: left;
+  width: 25%;
+  min-height: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 body.page .page-content {
   position: relative;
   float: left;
@@ -4917,6 +5109,7 @@ body.page-template-page-full .page-content {
 }
 .widget_hw_cal .activity-date {
   background-color: #6cacc4;
+  border-radius: 50%;
   color: #fff;
   display: inline-block;
   left: 0;
@@ -4933,7 +5126,7 @@ body.page-template-page-full .page-content {
   line-height: 1em;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 2px;
 }
 .widget_hw_cal .activity-date .month {
   font-size: 17.5px;
@@ -4941,10 +5134,10 @@ body.page-template-page-full .page-content {
   line-height: 1em;
   position: absolute;
   right: 0;
-  top: 12.5px;
+  top: 13.75px;
 }
 .widget_hw_cal .activity-date .date {
-  bottom: 0;
+  bottom: 1px;
   font-size: 20px;
   line-height: 1em;
   left: 0;
@@ -5053,6 +5246,7 @@ body.page-template-page-full .page-content {
 }
 .widget_hw_posts .activity-date {
   background-color: #3bb54a;
+  border-radius: 50%;
   color: #fff;
   display: inline-block;
   left: 0;
@@ -5069,7 +5263,7 @@ body.page-template-page-full .page-content {
   line-height: 1em;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 2px;
 }
 .widget_hw_posts .activity-date .month {
   font-size: 17.5px;
@@ -5077,10 +5271,10 @@ body.page-template-page-full .page-content {
   line-height: 1em;
   position: absolute;
   right: 0;
-  top: 12.5px;
+  top: 13.75px;
 }
 .widget_hw_posts .activity-date .date {
-  bottom: 0;
+  bottom: 1px;
   font-size: 20px;
   line-height: 1em;
   left: 0;

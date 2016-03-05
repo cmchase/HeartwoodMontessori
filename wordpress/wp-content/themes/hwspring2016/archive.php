@@ -1,19 +1,20 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
+<main class="main-content" role="main">
 
-			<h1><?php _e( 'Archives', 'heartwood' ); ?></h1>
+	<section class="page-content">
 
-			<?php get_template_part('loop'); ?>
+		<h1><?php _e( 'Archives', 'heartwood' ); ?></h1>
 
-			<?php get_template_part('pagination'); ?>
+		<?php get_template_part('loop'); ?>
 
-		</section>
-		<!-- /section -->
-	</main>
+		<?php get_template_part('pagination'); ?>
 
-<?php get_sidebar(); ?>
+	</section>
+	<!-- End page-content -->
+	<section class="page-sidebar">
+		<?php get_sidebar(); ?>
+	</section>
+</main>
 
 <?php get_footer(); ?>
