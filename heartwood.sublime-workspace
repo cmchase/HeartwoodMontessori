@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"acti",
+				"activity-date"
+			],
+			[
+				"color-gr",
+				"color-green-base"
+			],
+			[
+				"make-md-col",
+				"make-md-column-offset"
+			],
+			[
 				"make-",
 				"make-md-column-offset"
 			],
@@ -102,10 +114,6 @@
 			[
 				"mar",
 				"margin-bottom"
-			],
-			[
-				"color-gr",
-				"color-gray"
 			],
 			[
 				"fon",
@@ -492,42 +500,42 @@
 	"buffers":
 	[
 		{
-			"file": "wordpress/wp-content/plugins/heartwood/heartwood-plugin.php",
+			"file": "wordpress/wp-content/themes/hwspring2016/archive.php",
 			"settings":
 			{
-				"buffer_size": 4291,
-				"line_ending": "Windows"
+				"buffer_size": 374,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wordpress/wp-content/themes/hwspring2016/js/src/components/eventListItem.js",
+			"file": "wordpress/wp-content/themes/hwspring2016/category.php",
 			"settings":
 			{
-				"buffer_size": 877,
-				"line_ending": "Windows"
+				"buffer_size": 401,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wordpress/wp-content/themes/hwspring2016/js/gapiClient.js",
+			"file": "wordpress/wp-content/themes/hwspring2016/recent-posts.php",
 			"settings":
 			{
-				"buffer_size": 939,
-				"line_ending": "Windows"
+				"buffer_size": 741,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wordpress/wp-content/themes/hwspring2016/js/src/components/eventList.js",
+			"file": "wordpress/wp-content/themes/hwspring2016/loop.php",
 			"settings":
 			{
-				"buffer_size": 1261,
-				"line_ending": "Windows"
+				"buffer_size": 1468,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "wordpress/wp-content/themes/hwspring2016/styles/src/style.less",
 			"settings":
 			{
-				"buffer_size": 17454,
+				"buffer_size": 18383,
 				"line_ending": "Windows"
 			}
 		},
@@ -540,11 +548,35 @@
 			}
 		},
 		{
+			"file": "wordpress/wp-content/themes/hwspring2016/page-full.php",
+			"settings":
+			{
+				"buffer_size": 745,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "wordpress/wp-content/themes/hwspring2016/single.php",
 			"settings":
 			{
 				"buffer_size": 1478,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wordpress/wp-content/themes/hwspring2016/search.php",
+			"settings":
+			{
+				"buffer_size": 459,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wordpress/wp-content/themes/hwspring2016/static-front-page.php",
+			"settings":
+			{
+				"buffer_size": 5749,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -631,8 +663,6 @@
 		"/D/Development/heartwood",
 		"/D/Development/heartwood/wordpress",
 		"/D/Development/heartwood/wordpress/wp-content",
-		"/D/Development/heartwood/wordpress/wp-content/plugins",
-		"/D/Development/heartwood/wordpress/wp-content/plugins/heartwood",
 		"/D/Development/heartwood/wordpress/wp-content/themes",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/img",
@@ -640,19 +670,25 @@
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/js/src",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/js/src/components",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/styles",
+		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/styles/css",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/styles/src",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/styles/src/imports"
 	],
 	"file_history":
 	[
-		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/styles/src/style.less",
+		"/C/Users/Cory/AppData/Roaming/Sublime Text 3/Packages/User/LESS.sublime-settings",
+		"/C/Users/Cory/AppData/Roaming/Sublime Text 3/Packages/LESS/README.md",
+		"/C/Users/Cory/AppData/Roaming/Sublime Text 3/Packages/LESS/LESS.sublime-settings",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/js/src/components/eventList.js",
+		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/index.php",
+		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/functions.php",
+		"/D/Development/heartwood/wordpress/wp-content/plugins/heartwood/heartwood-plugin.php",
+		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/js/src/components/eventListItem.js",
+		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/styles/src/style.less",
 		"/D/Development/heartwood/.gitignore",
 		"/D/Development/corychase/works/index.html",
-		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/js/src/components/eventListItem.js",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/js/src/main.js",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/js/gapiClient.js",
-		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/functions.php",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/static-front-page.php",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/styles/src/imports/variables.less",
 		"/D/Development/heartwood/gulpfile.js",
@@ -679,7 +715,6 @@
 		"/D/Development/heartwood/wordpress/app.js",
 		"/D/Development/heartwood/heartwood.sublime-project",
 		"/D/Development/heartwood/package.json",
-		"/D/Development/heartwood/wordpress/wp-content/plugins/heartwood/heartwood-plugin.php",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/sidebar.php",
 		"/C/inetpub/wwwroot/heartwood/wp-content/plugins/heartwood/heartwood-plugin.php",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/footer.php",
@@ -690,7 +725,6 @@
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/metabox-demo.php",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/template-demo.php",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/template-splash-page.php",
-		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/index.php",
 		"/C/Users/Cory/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/styles/css/style.css",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/styles/src/bootstrap/responsive-utilities.less",
@@ -769,10 +803,7 @@
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/languages/it_IT.po",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/languages/nl_NL.mo",
 		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/languages/nl_NL.po",
-		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/languages/pt_BR.mo",
-		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/languages/pt_BR.po",
-		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/languages/ro_RO.mo",
-		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/languages/ro_RO.po"
+		"/D/Development/heartwood/wordpress/wp-content/themes/hwspring2016/languages/pt_BR.mo"
 	],
 	"find":
 	{
@@ -795,6 +826,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"activity-date",
+			".activity-list",
+			"google_cal",
+			"hw_google_cal_shortcode",
+			"hortcode_demo",
+			"shortcode",
+			"short",
 			".text-shadow",
 			"text-shado",
 			"glyphicon",
@@ -915,14 +953,7 @@
 			"@",
 			"@brand-primary",
 			"@gray-base",
-			"jquery",
-			"themeDestination",
-			"themeSource",
-			"get_sidebar()",
-			"get_header",
-			"<li",
-			"header-menu",
-			"sub-menu"
+			"jquery"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -973,24 +1004,80 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 9,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "wordpress/wp-content/plugins/heartwood/heartwood-plugin.php",
+					"file": "wordpress/wp-content/themes/hwspring2016/archive.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4291,
+						"buffer_size": 374,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3256,
-								3256
+								0,
+								374
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wordpress/wp-content/themes/hwspring2016/category.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								401
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wordpress/wp-content/themes/hwspring2016/recent-posts.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 741,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								546,
+								546
 							]
 						],
 						"settings":
@@ -999,99 +1086,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1311.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "wordpress/wp-content/themes/hwspring2016/js/src/components/eventListItem.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 877,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								382,
-								382
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "wordpress/wp-content/themes/hwspring2016/js/gapiClient.js",
-					"semi_transient": true,
+					"buffer": 3,
+					"file": "wordpress/wp-content/themes/hwspring2016/loop.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 939,
+						"buffer_size": 1468,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								348,
-								365
+								858,
+								808
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "wordpress/wp-content/themes/hwspring2016/js/src/components/eventList.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1261,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								624,
-								626
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1100,15 +1127,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 17454,
+						"buffer_size": 18383,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14764,
-								14764
+								14969,
+								14969
 							]
 						],
 						"settings":
@@ -1117,7 +1144,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1992.0,
+						"translation.y": 2317.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -1136,8 +1163,8 @@
 						"selection":
 						[
 							[
-								64,
-								64
+								0,
+								815
 							]
 						],
 						"settings":
@@ -1149,11 +1176,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
+					"file": "wordpress/wp-content/themes/hwspring2016/page-full.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								90,
+								90
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "wordpress/wp-content/themes/hwspring2016/single.php",
 					"semi_transient": false,
 					"settings":
@@ -1165,8 +1221,8 @@
 						"selection":
 						[
 							[
-								737,
-								973
+								256,
+								256
 							]
 						],
 						"settings":
@@ -1178,7 +1234,64 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "wordpress/wp-content/themes/hwspring2016/search.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "wordpress/wp-content/themes/hwspring2016/static-front-page.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1234,
+								1234
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1227,7 +1340,7 @@
 	"project": "heartwood.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":

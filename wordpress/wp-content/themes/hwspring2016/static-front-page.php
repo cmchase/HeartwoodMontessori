@@ -3,7 +3,7 @@
 	<main class="main-content" role="main">
 
 		<section class="hero hero-header">
-			<img src="<?= get_template_directory_uri(); ?>/img/splash/hero-header01.jpg" alt="Heartwood Montessori School serves all ages throughout Raleigh, Cary, Morrisville and Apex North Carolina" />
+			<img src="<?= get_template_directory_uri(); ?>/img/splash/hero-header04.jpg" alt="Heartwood Montessori School serves all ages throughout Raleigh, Cary, Morrisville and Apex North Carolina" />
 		</section>
 
 		<section class="splash-row-intro">
