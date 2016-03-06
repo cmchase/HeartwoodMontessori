@@ -3271,51 +3271,6 @@ input[type="button"].btn-block {
 /*------------------------------------*\
     Debug -- DELETE THIS
 \*------------------------------------*/
-body::after {
-  content: "";
-  color: white;
-  left: 0;
-  top: 0;
-  position: fixed;
-  text-align: center;
-  width: 50px;
-  z-index: 9000;
-}
-@media screen and (max-width: 480px) {
-  body::after {
-    content: "xxs";
-    background-color: red;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  body::after {
-    content: "xs";
-    background-color: orange;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  body::after {
-    content: "sm";
-    background-color: yellow;
-    color: black;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  body::after {
-    content: "md";
-    background-color: green;
-  }
-}
-@media screen and (min-width: 1200px) {
-  body::after {
-    content: "default";
-    background-color: blue;
-  }
-}
-html.lt-ie9 body::after {
-  content: "default";
-  background-color: blue;
-}
 html,
 body {
   background-color: #ccc;
@@ -4793,6 +4748,9 @@ body.single-post .post-sidebar {
 .page-content .type-page a {
   color: #c49a6c;
 }
+.page-content .type-page img {
+  border: 1px solid #c49a6c;
+}
 .page-content .type-page .activity-date {
   display: none;
 }
@@ -4801,6 +4759,9 @@ body.single-post .post-sidebar {
 }
 .page-content .type-post a {
   color: #3bb54a;
+}
+.page-content .type-post img {
+  border: 1px solid #3bb54a;
 }
 .page-content .type-post .activity-list {
   list-style: none;
@@ -4939,10 +4900,21 @@ body.single-post .post-sidebar {
 .page-content .type-post .author-info {
   clear: both;
   display: block;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+.page-content .type-post .author-info .author-intro {
+  color: #656263;
+  font-style: italic;
+  margin-right: 3px;
+}
+.page-content .type-post .author-info .author-name {
+  font-weight: 700;
 }
 .page-content .entry-details {
   position: absolute;
   left: -175px;
+  width: 150px;
   top: 20px;
 }
 .page-content .entry-details .activity-date {

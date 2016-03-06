@@ -16,11 +16,7 @@
 					<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
 				</a>
 			<?php endif; ?>
-			<!-- /post thumbnail -->
-			<span class="author-info">
-				<span class="author-intro">Written by </span>
-				<span class="author-name"><?php the_author(); ?></span>
-			</span>
+			<!-- /post thumbnail -->			
 		</section>
 		<!-- /post details -->
 
@@ -28,6 +24,10 @@
 		<h2 class="entry-title">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 		</h2>
+		<p class="author-info">
+			<span class="author-intro">Written by </span>
+			<span class="author-name"><?php the_author(); ?></span>
+		</p>
 		<!-- /post title -->
 
 

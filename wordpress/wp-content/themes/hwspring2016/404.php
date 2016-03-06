@@ -1,24 +1,19 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
+<main class="main-content" role="main">
 
-			<!-- article -->
-			<article id="post-404">
+	<section class="page-content">
 
-				<h1><?php _e( 'Page not found', 'heartwood' ); ?></h1>
-				<h2>
-					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'heartwood' ); ?></a>
-				</h2>
+		<h1><?php _e( 'Page not found', 'heartwood' ); ?></h1>
+		<h2>
+			<a href="<?php echo home_url(); ?>"><?php _e( 'Return home!?', 'heartwood' ); ?></a>
+		</h2>
 
-			</article>
-			<!-- /article -->
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+	</section>
+	<!-- End page-content -->
+	<section class="page-sidebar">
+		<?php get_sidebar(); ?>
+	</section>
+</main>
 
 <?php get_footer(); ?>
