@@ -7,10 +7,11 @@
 						contact us and we'll be happy to talk.</p>
 					</div>
 					<div class="form-col">
-						<input type="text" id="contactName" class="name" placeholder="Name" />
+						<?php echo do_shortcode('[contact-form-7 id="140" title="Footer Contact"]'); ?>
+						<!-- <input type="text" id="contactName" class="name" placeholder="Name" />
 						<input type="email" id="contactEmail" class="email" placeholder="Email Address" />
 						<textarea id="contactMessage" class="message" placeholder="Questions and Comments"></textarea>
-						<button>Submit</button>
+						<button>Submit</button> -->
 					</div>
 					<div class="info-col">
 						<address>

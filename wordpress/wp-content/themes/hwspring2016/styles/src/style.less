@@ -118,14 +118,16 @@
 		color: @color-gray;
 		display: block;
 		min-height: @size;
+		padding-bottom: 1.2em;
 		position: relative;
 		text-decoration: none;			
 	}
 	.activity-link {
 		&:hover {
-			background-color: lighten(@color, 50%);
+			@darker: darken(@color, 20%);
+			color: @darker;
 			.activity-date {
-				background-color: darken(@color, 20%);
+				background-color: @darker;
 			}
 		}
 	}
@@ -468,6 +470,16 @@ button {
 	}
 }
 
+.pagination {
+	.page-numbers {
+		a, span {
+			padding: 5px;
+		}
+		&.current {}
+		&.next {}
+		&.prev {}
+	}
+}
 .contact-section {
 	.make-row(0);
 	background-color: @color-gold-light;
@@ -483,21 +495,34 @@ button {
 		}
 	}
 	.form-col {
+		.ajax-loader {
+			position: absolute;
+			left: 50%;
+			margin-left: -220px/2; // Width of loading indicator divided by 2.
+			bottom: 10px;
+		}
 		.make-default-column(6);
-		input {
-			.form-control();
+		.wpcf7-form-control-wrap {
 			float: left;
 			margin: 10px;
 			width: 40%;
 			margin: 0 5% 10px;
+			&.contact-message {
+				margin: 0 5% 10px;
+				width: 90%;
+			}
+		}
+		input[type=text],
+		input[type=email] {
+			.form-control();
 		}
 		textarea {
 			.form-control();
 			height: 100px;
-			margin: 0 5% 10px;
-			width: 90%;
 		}
-		button {
+		input[type=submit] {
+			.btn();
+			.btn-primary();
 			float: right;
 			margin-right: 5%;
 		}
@@ -773,7 +798,6 @@ button {
 		}
 	}
 }
-
 .module {
 	.mod-styled(@color) {
 		position: relative;
@@ -847,6 +871,7 @@ body.single-post {
 
 	.post-details {
 		.make-default-column(2);
+		.make-md-column-offset(0);
 		.padded-col();
 		.activity-date(@color-green-base, 100px);
 		.activity-date {
@@ -857,6 +882,7 @@ body.single-post {
 
 	.post-content {
 		.make-default-column(7);
+		.make-md-column-offset(0);
 		.padded-col();
 	}
 
@@ -870,8 +896,8 @@ body.single-post {
     Standard & Single Page
 \*------------------------------------*/
 
-// Search, Archive, Category
-.page-content {
+// Content layout defaults
+.post-content {
 	.make-default-column(6);
 	.make-md-column-offset(3);
 	.padded-col();
@@ -930,25 +956,29 @@ body.single-post {
 		}
 	}
 }
-.page-sidebar {
+.post-sidebar {
 	.make-default-column(3);
 	.padded-col();		
 }
 
+/*------------------------------------*\
+    Standard & Single Page
+\*------------------------------------*/
+
 body.page {
-	.page-content {
+	.post-content {
 		.make-default-column(8);
 		.make-md-column-offset(1);
 		.padded-col();
 	}
-	.page-sidebar {
+	.post-sidebar {
 		.make-default-column(3);
 		.padded-col();		
 	}
 }
 
-body.page-template-page-full {
-	.page-content {
+body.post-template-post-full {
+	.post-content {
 		.make-default-column(12);
 		.make-md-column-offset(0);
 		.padded-col();
@@ -985,8 +1015,6 @@ body.page-template-page-full {
 		.glyphicon-list-alt();
 	}
 }
-
-
 
 /*------------------------------------*\
     MISC
@@ -1112,13 +1140,13 @@ a img.aligncenter {
 	}
 	pre,blockquote {
 		border:1px solid #999;
-		page-break-inside:avoid;
+		post-break-inside:avoid;
 	}
 	thead {
 		display:table-header-group;
 	}
 	tr,img {
-		page-break-inside:avoid;
+		post-break-inside:avoid;
 	}
 	img {
 		max-width:100% !important;
@@ -1134,6 +1162,6 @@ a img.aligncenter {
 	}
 	h2,
 	h3 {
-		page-break-after:avoid;
+		post-break-after:avoid;
 	}
 }

@@ -5,6 +5,7 @@ var ReactDOM = require('react-dom');
 var EventList = require('./components/EventList');
 
 window.hw = {
+	themeSrc: "/wp-content/themes/hwspring2016/",
 	daysAbbr: ['Sun','Mon','Tues','Weds','Thur','Fri','Sat'],
 	monthsAbbr: ['Jan','Feb','Mar','Apr','May','June','July','Aug','Sept','Oct','Nov','Dec'],
 
@@ -99,8 +100,13 @@ window.hw = {
 			scrollDelta = window.scrollY;
 		}, 200);
 	};
-	// Some hacky business for the upcoming events until React is added.
-	//$("#upcomingEvents").html($("#upcomingEventsTpl").html());
+	// Even though we're at the end of the doc, we need
+	// to wait for document ready in some instances.
+	$(function(){
+		// Let's replace the Contact Form 7 loading indicator
+		// with something a little more noticible.
+		$("img.ajax-loader").attr("src", hw.themeSrc + "img/loading.gif")
+	})
 		
 	sizeHeader();
 	window.addEventListener('resize', resizeCallback)

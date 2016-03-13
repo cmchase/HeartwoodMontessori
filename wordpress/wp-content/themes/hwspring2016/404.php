@@ -2,16 +2,16 @@
 
 <main class="main-content" role="main">
 
-	<section class="page-content">
+	<section class="post-content">
 
-		<h1><?php _e( 'Page not found', 'heartwood' ); ?></h1>
-		<h2>
+		<h1 class="page-title"><?php _e( 'Page not found', 'heartwood' ); ?></h1>
+		<p>
 			<a href="<?php echo home_url(); ?>"><?php _e( 'Return home!?', 'heartwood' ); ?></a>
-		</h2>
+		</p>
 
 	</section>
 	<!-- End page-content -->
-	<section class="page-sidebar">
+	<section class="post-sidebar">
 		<?php get_sidebar(); ?>
 	</section>
 </main>
