@@ -96,7 +96,7 @@
 				<h1>Recent News</h1>
 			</header>
 			<?php
-				query_posts('numberposts=4&category_name=spotlight&orderby=date&order=desc');
+				query_posts('showposts=4&category_name=spotlight&orderby=date&order=desc');
 				while ( have_posts() ) : the_post();
 			    if ($wp_query->current_post == 0) :
 			 ?>

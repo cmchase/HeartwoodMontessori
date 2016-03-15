@@ -6,7 +6,7 @@ var EventList = require('./components/EventList');
 
 window.hw = {
 	themeSrc: "/wp-content/themes/hwspring2016/",
-	daysAbbr: ['Sun','Mon','Tues','Weds','Thur','Fri','Sat'],
+	daysAbbr: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
 	monthsAbbr: ['Jan','Feb','Mar','Apr','May','June','July','Aug','Sept','Oct','Nov','Dec'],
 
 	// This is one of those convenience methods you either don't 
