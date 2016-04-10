@@ -40,6 +40,7 @@
 
 					<!-- nav -->
 					<nav id="main-nav" class="nav" role="navigation">
+						<a href="#" class="menu-trigger"><span class="menu-icon"></span></a>
 						<?php header_nav(); ?>
 					</nav>
 					<!-- /nav -->

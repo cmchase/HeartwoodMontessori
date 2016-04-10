@@ -52,16 +52,21 @@ window.hw = {
 		ReactDOM.render(<EventList />, document.getElementById('upcomingEvents'))
 	} 
 	var $headerContainer = $("#main-header").parent(),
+		viewWidth =  $("#main-header").parent().width(),
+		viewHeight,
 		stickyHeader,
 		scrollDelta = 0,
 		// We need to resize the main header area because it's
 		// using a fixed position (when sticky) and will default
 		// to its content width without an explicit size.
-		sizeHeader = function(){
-			$("#main-header").width($("#main-header").parent().width());
+		sizeContent = function(){
+			viewWidth = $("#main-header").parent().width();
+			viewHeight = $(window).height();
+			$("#main-nav>ul").css("max-height", viewHeight * .8);
+			$("#main-header").width(viewWidth);
 		},
 		resizeCallback = hw.debounce(function(){
-			sizeHeader();
+			sizeContent();
 		}, 250);
 	
 	$("#main-nav .menu-item-has-children").each(function(){
@@ -74,7 +79,7 @@ window.hw = {
 			}
 		)
 	});
-	if ($("body").hasClass("home")) {
+	if ($("body").hasClass("home") && viewWidth > 768) {
 		$headerContainer.removeClass("scroll-up sticky-header");
 		stickyHeader = hw.debounce(function(){
 			if (window.scrollY > 50) {
@@ -93,8 +98,10 @@ window.hw = {
 		$headerContainer.addClass("scroll-up sticky-header");
 		stickyHeader = hw.debounce(function(){
 			if (window.scrollY < scrollDelta) {
+				console.log('scroll-up')
 				$headerContainer.addClass("scroll-up");
 			} else {
+				console.log('scroll-down')
 				$headerContainer.removeClass("scroll-up");
 			}
 			scrollDelta = window.scrollY;
@@ -108,7 +115,7 @@ window.hw = {
 		$("img.ajax-loader").attr("src", hw.themeSrc + "img/loading.gif")
 	})
 		
-	sizeHeader();
+	sizeContent();
 	window.addEventListener('resize', resizeCallback)
 	window.addEventListener('scroll', stickyHeader);
 
