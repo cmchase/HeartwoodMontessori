@@ -243,6 +243,29 @@ html, body {
 	padding: 0;
 }
 
+body {
+	.nav-wrapper {
+		.media-xs({
+			background-color: @color-blue-dark;
+			display: none;
+			overflow: auto;
+			width: auto;
+		});
+	}
+	&.nav-shown {
+		.nav-wrapper {
+			display: block;
+		}
+		.nav-trigger {
+			.nav-icon {
+				.media-xs({
+					.glyphicon-remove() !important; // barf
+				});
+			}
+		}
+	}
+}
+
 h1, h2, h3, h4, a{
 	.text-shadow(rgba(255,255,255,.5));
 }
@@ -384,7 +407,7 @@ button {
 					}
 				}
 			}
-			:last-child {
+			&:last-child {
 				ul.sub-menu {
 					right: 0;
 					left: auto;
@@ -418,8 +441,8 @@ button {
 				padding-top: @header-height;
 				padding-right: 0;
 			});
-			.menu-trigger {
-				.menu-icon {
+			.nav-trigger {
+				.nav-icon {
 					display: none;
 					.media-xs({
 						.glyphicon();
@@ -434,13 +457,7 @@ button {
 				}
 			}
 			ul {
-				.media-xs({
-					display: none;
-					background-color: @color-blue-dark;
-					overflow: auto;
-					width: auto;
-
-				});
+				
 				li {
 					.media-xs({
 						display: block;

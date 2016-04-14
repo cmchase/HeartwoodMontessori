@@ -5,7 +5,7 @@ var ReactDOM = require('react-dom');
 var EventList = require('./components/EventList');
 
 window.hw = {
-	themeSrc: "/wp-content/themes/hwspring2016/",
+	themeSrc: '/wp-content/themes/hwspring2016/',
 	daysAbbr: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
 	monthsAbbr: ['Jan','Feb','Mar','Apr','May','June','July','Aug','Sept','Oct','Nov','Dec'],
 
@@ -47,12 +47,14 @@ window.hw = {
 };
 
 (function ($, root, undefined) { 
-	"use strict";
+	'use strict';
+
 	if ($('#upcomingEvents').length > 0) {
 		ReactDOM.render(<EventList />, document.getElementById('upcomingEvents'))
-	} 
-	var $headerContainer = $("#main-header").parent(),
-		viewWidth =  $("#main-header").parent().width(),
+	};
+
+	var $headerContainer = $('#main-header').parent(),
+		viewWidth =  $('#main-header').parent().width(),
 		viewHeight,
 		stickyHeader,
 		scrollDelta = 0,
@@ -60,49 +62,47 @@ window.hw = {
 		// using a fixed position (when sticky) and will default
 		// to its content width without an explicit size.
 		sizeContent = function(){
-			viewWidth = $("#main-header").parent().width();
+			viewWidth = $('#main-header').parent().width();
 			viewHeight = $(window).height();
-			$("#main-nav>ul").css("max-height", viewHeight * .8);
-			$("#main-header").width(viewWidth);
+			$('.nav-wrapper').css('max-height', viewHeight * .8);
+			$('#main-header').width(viewWidth);
 		},
 		resizeCallback = hw.debounce(function(){
 			sizeContent();
 		}, 250);
 	
-	$("#main-nav .menu-item-has-children").each(function(){
+	$('#main-nav .menu-item-has-children').each(function(){
 		var $this = $(this);
 		$this.hover(
 			function addHover(){
-				$this.addClass("hover");
+				$this.addClass('hover');
 			}, function removeHover() {
-				$this.removeClass("hover");
+				$this.removeClass('hover');
 			}
 		)
 	});
-	if ($("body").hasClass("home") && viewWidth > 768) {
-		$headerContainer.removeClass("scroll-up sticky-header");
+	if ($('body').hasClass('home') && viewWidth > 1024) {
+		$headerContainer.removeClass('scroll-up sticky-header');
 		stickyHeader = hw.debounce(function(){
 			if (window.scrollY > 50) {
 				if (window.scrollY < scrollDelta) {
-					$headerContainer.addClass("scroll-up");
+					$headerContainer.addClass('scroll-up');
 				} else {
-					$headerContainer.removeClass("scroll-up");
+					$headerContainer.removeClass('scroll-up');
 				}
-				$headerContainer.addClass("sticky-header");
+				$headerContainer.addClass('sticky-header');
 			} else {
-				$headerContainer.removeClass("sticky-header")
+				$headerContainer.removeClass('sticky-header')
 			}
 			scrollDelta = window.scrollY;
 		}, 200);
 	} else {
-		$headerContainer.addClass("scroll-up sticky-header");
+		$headerContainer.addClass('scroll-up sticky-header');
 		stickyHeader = hw.debounce(function(){
 			if (window.scrollY < scrollDelta) {
-				console.log('scroll-up')
-				$headerContainer.addClass("scroll-up");
+				$headerContainer.addClass('scroll-up');
 			} else {
-				console.log('scroll-down')
-				$headerContainer.removeClass("scroll-up");
+				$headerContainer.removeClass('scroll-up');
 			}
 			scrollDelta = window.scrollY;
 		}, 200);
@@ -112,7 +112,14 @@ window.hw = {
 	$(function(){
 		// Let's replace the Contact Form 7 loading indicator
 		// with something a little more noticible.
-		$("img.ajax-loader").attr("src", hw.themeSrc + "img/loading.gif")
+		$('img.ajax-loader').attr('src', hw.themeSrc + 'img/loading.gif');
+		$('.nav-trigger').on('click', function(event) {
+			event.stopPropagation();
+			$('body').toggleClass('nav-shown');
+		});
+		$('body').on('click', function() {
+			$('body').removeClass('nav-shown');
+		})
 	})
 		
 	sizeContent();

@@ -3336,6 +3336,22 @@ body {
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 767px) {
+  body .nav-wrapper {
+    background-color: #2e7497;
+    display: none;
+    overflow: auto;
+    width: auto;
+  }
+}
+body.nav-shown .nav-wrapper {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  body.nav-shown .nav-trigger .nav-icon:before {
+    content: "\e014" !important;
+  }
+}
 h1,
 h2,
 h3,
@@ -3572,7 +3588,7 @@ html.lt-ie9 .main-header .nav ul li a {
   text-align: left;
   padding: 10px 20px;
 }
-.main-header .nav ul :last-child ul.sub-menu {
+.main-header .nav ul:last-child ul.sub-menu {
   right: 0;
   left: auto;
 }
@@ -3632,11 +3648,11 @@ html.lt-ie9 .main-header .nav ul li a {
     width: 50%;
   }
 }
-.sticky-header .main-header .nav .menu-trigger .menu-icon {
+.sticky-header .main-header .nav .nav-trigger .nav-icon {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .sticky-header .main-header .nav .menu-trigger .menu-icon {
+  .sticky-header .main-header .nav .nav-trigger .nav-icon {
     position: relative;
     top: 1px;
     display: inline-block;
@@ -3652,16 +3668,8 @@ html.lt-ie9 .main-header .nav ul li a {
     top: 15px;
     right: 15px;
   }
-  .sticky-header .main-header .nav .menu-trigger .menu-icon:before {
+  .sticky-header .main-header .nav .nav-trigger .nav-icon:before {
     content: "\e236";
-  }
-}
-@media screen and (max-width: 767px) {
-  .sticky-header .main-header .nav ul {
-    display: none;
-    background-color: #2e7497;
-    overflow: auto;
-    width: auto;
   }
 }
 @media screen and (max-width: 767px) {
