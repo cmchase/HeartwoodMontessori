@@ -1,11 +1,20 @@
 var React = require('react')
 var EventListItem = React.createClass({
   render: function(){
-    var event = this.props.event;
-    var start = new Date(event.start.dateTime),
+    var event = this.props.event,
+        start = new Date(event.start.dateTime),
         end = new Date(event.end.dateTime),
         summary = event.summary,
-        description = event.description;
+        description = event.description,
+        timeRange;
+        
+    // If our start and end times are the same, 
+    // let's just show the Start
+    if (hw.getTime(start) === hw.getTime(end)) {
+      timeRange = hw.getTime(start);
+    } else {
+      timeRange = hw.getTime(start) + " - " + hw.getTime(end); 
+    };
 
     return (
       <li className="activity-item">
@@ -16,7 +25,7 @@ var EventListItem = React.createClass({
             <span className="date">{start.getDate()}</span>
           </span>
           <span className="activity-title">{summary}</span>
-          <span className="activity-time">{hw.getTime(start)} - {hw.getTime(end)}</span>
+          <span className="activity-time">{timeRange}</span>
         </div>
       </li>
     )

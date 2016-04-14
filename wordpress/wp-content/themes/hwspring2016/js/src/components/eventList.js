@@ -11,8 +11,10 @@ var EventList = React.createClass({
         this.setState({ events: val})
       }.bind(this);
 
+      // Let's grab 10 events to give us a few extra to 
+      // work with just in case some aren't valid
       this.setState({
-          events: gapiClient.listUpcomingEvents(4, set)
+          events: gapiClient.listUpcomingEvents(10, set)
       });
     }.bind(this);
   },
@@ -29,8 +31,17 @@ var EventList = React.createClass({
     } else {
       for (var i = 0; i < events.length; i++){
         var event = events[i];
-        eventItems.push(<EventListItem key={event.etag} event={event} />);
-      }
+
+        // Let's only add items that have valid start dates
+        if (Date.parse(event.start.dateTime)) { 
+          eventItems.push(<EventListItem key={event.etag} event={event} />);
+        };
+
+        // If we've reach our limit, let's break out of our loop
+        if (eventItems.length === 4) {
+          break;
+        };
+      };
       return (
         <div>
           <ul className="activity-list">
