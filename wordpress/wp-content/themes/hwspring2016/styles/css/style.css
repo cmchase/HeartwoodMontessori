@@ -5027,16 +5027,13 @@ html.lt-ie9 .splash-row-modules .module {
 .splash-row-posts .main img {
   border: 1px solid #3bb54a;
   border-color: #3bb54a;
+  float: right;
+  margin-left: 20px;
 }
 @media screen and (max-width: 991px) {
   .splash-row-posts .main img {
+    float: none;
     margin: 0 auto;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .splash-row-posts .main img {
-    float: right;
-    margin-left: 20px;
   }
 }
 .splash-row-posts .main .read-more {
