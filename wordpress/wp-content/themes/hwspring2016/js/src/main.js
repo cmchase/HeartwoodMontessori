@@ -73,13 +73,29 @@ window.hw = {
 	
 	$('#main-nav .menu-item-has-children').each(function(){
 		var $this = $(this);
-		$this.hover(
-			function addHover(){
-				$this.addClass('hover');
-			}, function removeHover() {
-				$this.removeClass('hover');
-			}
-		)
+		// Let's watch for touch devices so 
+		// we can show our dropdowns correctly
+		if ($('html').hasClass('touch')) {
+			$this.click(function(event){
+				if ($this.hasClass('hover')) {
+					event.stopPropagation();
+					return true;
+				} else {
+					event.preventDefault();
+					event.stopPropagation();
+					$('.hover').removeClass('hover');
+					$this.addClass('hover');
+				}
+			});
+		} else {
+			$this.hover(
+				function addHover(){
+					$this.addClass('hover');
+				}, function removeHover() {
+					$this.removeClass('hover');
+				}
+			)
+		}
 	});
 	if ($('body').hasClass('home') && viewWidth > 1024) {
 		$headerContainer.removeClass('scroll-up sticky-header');
@@ -119,6 +135,7 @@ window.hw = {
 		});
 		$('body').on('click', function() {
 			$('body').removeClass('nav-shown');
+			$('.hover').removeClass('hover');
 		})
 	})
 		
