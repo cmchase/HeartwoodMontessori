@@ -4728,6 +4728,7 @@ html.lt-ie9 .main-footer .footer-branding {
 }
 .splash-row-centered .main h1 {
   color: #3bb54a;
+  text-align: center;
 }
 .splash-row-modules {
   margin-left: 0;
@@ -4776,6 +4777,7 @@ html.lt-ie9 .main-footer .footer-branding {
 }
 .splash-row-modules .main h1 {
   color: #6cacc4;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .splash-row-modules .module {
