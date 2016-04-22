@@ -14,16 +14,17 @@
 				</span>
 			</article>
 			<article class="main">
-				<h1>A Warm &amp; Welcoming 
+				<h1>A Warm &amp; Welcoming
 				<span class="soft-break">Montessori Experience</span></h1>
 
-				<p>Heartwood Montessori School, founded in 1991 by Sue Daniel (AMS Credentialed), is committed to quality education for children ages <strong>18 months to 18 years</strong> with a total student population of 180.</p>
+				<p>Heartwood Montessori School provides students with an authentic Montessori education. Certified teachers use authentic materials to teach a wide range of Montessori works including the five Great Lessons.</p>
 
-				<p>Our school provides an extensive curriculum based on the Montessori Method and inclusive of State and National standards.</p>
+				<p>Peace Eduction is at the heart of everything we do. Heartwood Montessori School prides itself on the respect we show our students and the community we build with our families.</p>
 
-				<h1>Our Core Philosophy</h1>
+				<h1>Quality Education for Students 18 Months to 18 Years</h1>
 
-				<p>Respect for the child, passion for our community and a welcoming and inclusive learning envrionment are the cornerstones of Heartwood's philosophy.</p>
+				<p>Heartwood Montessori School serves students aged 18 months to 18 years. In addition to the Montessori curriculum presented by our certified teachers, students are also provided lessons in art, movement and Spanish.</p>
+
 			</article>
 			<article class="events-col">
 				<h1>Events</h1>
@@ -33,7 +34,7 @@
 
 		<section class="hero">
 		<img
-			srcset="<?= get_template_directory_uri(); ?>/img/splash/hero02-lg.jpg	1270w, 
+			srcset="<?= get_template_directory_uri(); ?>/img/splash/hero02-lg.jpg	1270w,
 			        <?= get_template_directory_uri(); ?>/img/splash/hero02-md.jpg	768w,
 			        <?= get_template_directory_uri(); ?>/img/splash/hero02-sm.jpg   480w"
 			src="<?= get_template_directory_uri(); ?>/img/splash/hero02-md.jpg"
@@ -46,9 +47,9 @@
 			<article class="main">
 				<h1>Why Chose Heartwood Montessori</h1>
 
-				<p>The Montessori approach encourages children to learn through self-motivation within a carefully prepared environment. The multi-age setting offers the child an opportunity to relate to, and work with others at his/her developmental level.</p>
+				<p>At all levels and in all areas, <strong>Heartwood places the needs of the child first</strong>. The AMS credentialed staff believes that children, not subjects, are taught. At Heartwood Montessori School you are truly part of a community of parents, students and teachers. We are here to support you and your family in any way we can.</p>
 
-				<p>At all levels and in all areas, <strong>Heartwood places the needs of the child first</strong>. The AMS credentialed staff believes that children, not subjects, are taught.</p>
+				<p>The Montessori approach encourages children to learn through self-motivation within a carefully prepared environment. The multi-age setting offers the child an opportunity to relate to, and work with others at his/her developmental level.</p>
 			</article>
 		</section>
 
@@ -58,11 +59,11 @@
 
 		<section class="splash-row-modules">
 			<article class="main">
-					<h1>Why Chose Heartwood Montessori?</h1>
+					<h1>Our Philosophy</h1>
 
-					<p>The Montessori approach encourages children to learn through self-motivation within a carefully prepared environment. The multi-age setting offers the child an opportunity to relate to, and work with others at his/her developmental level.</p>
+					<p>The cornerstone of Heartwood's philosophy is the respect it has for it's students and their cognitive, social and emotional development. At Heartwood we recognize that a child is more responsive to certain learning experiences at particular times in their development. By carefully looking for and respecting these "sensitive periods" in their growth, teachers are able to maximize student learning while maintaining and even expanding the child's nature curiosity and interest in learning.</p>
 
-					<p>At all levels and in all areas, <strong>Heartwood places the needs of the child first</strong>. The AMS credentialed staff believes that children, not subjects, are taught.</p>
+					<p>As practioners of Peace Education, we believe that the most important role a teacher plays in their students social and emotional growth is to provide an environment deliberately designed to promote the development of peaceful individuals and interactions. </p>
 			</article>
 
 			<article class="module module-1">
@@ -100,7 +101,7 @@
 				while ( have_posts() ) : the_post();
 			    if ($wp_query->current_post == 0) :
 			 ?>
-				<article class="main">	
+				<article class="main">
 					<section class="spotlight-post">
 						<span class="activity-date">
 							<span class="day"><?= the_time('D'); ?></span>
@@ -109,16 +110,16 @@
 						</span>
 						<h3><a href="<?= the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<?= the_post_thumbnail('spotlight') ?>
-						<?php hw_excerpt('hw_index'); ?>						
+						<?php hw_excerpt('hw_index'); ?>
 					</section>
 				</article>
 				<article class="posts-archive-col">
 					<ul class="activity-list">
-					<?php 
-						endif; 
-						endwhile; 
+					<?php
+						endif;
+						endwhile;
 						while ( have_posts() ) : the_post();
-				    	if ($wp_query->current_post > 0) : ?> 
+				    	if ($wp_query->current_post > 0) : ?>
 						<li class="activity-item">
 							<a href="<?= the_permalink(); ?>" class="activity-link">
 								<span class="activity-date">
@@ -126,16 +127,16 @@
 									<span class="month"><?= the_time('M'); ?></span>
 									<span class="date"><?= the_time('j'); ?></span>
 								</span>
-							
+
 								<span class="activity-title"><?= the_title(); ?></span>
 							</a>
 						</li>
 		 			<?php endif; endwhile; ?>
 					</ul>
 					<a href="#" class="activity-more">
-						<span class="icon"></span>View All News 
+						<span class="icon"></span>View All News
 					</a>
-					
+
 				</article>
 
 		</section>

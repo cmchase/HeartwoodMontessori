@@ -4701,7 +4701,8 @@ html.lt-ie9 .main-footer .footer-branding {
   min-height: 1px;
   padding-left: 20px;
   padding-right: 20px;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
 }
 @media (min-width: 768px) {
   .splash-row-centered .main {
@@ -4748,7 +4749,8 @@ html.lt-ie9 .main-footer .footer-branding {
   min-height: 1px;
   padding-left: 20px;
   padding-right: 20px;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
 }
 @media (min-width: 768px) {
   .splash-row-modules .main {
@@ -5070,9 +5072,14 @@ body.single-post .post-header {
   text-align: center;
   padding: 50px;
 }
+@media screen and (max-width: 991px) {
+  body.single-post .post-header {
+    padding: 10px;
+  }
+}
 body.single-post .post-header .post-title {
   color: #3bb54a;
-  margin-bottom: 0;
+  margin: 0;
 }
 body.single-post .post-header .post-author .author-intro {
   color: #656263;
@@ -5086,14 +5093,18 @@ body.single-post .caption-text {
   background-color: #c49a6c;
   color: #fff;
 }
+@media screen and (max-width: 991px) {
+  body.single-post .caption-text {
+    display: none;
+  }
+}
 body.single-post .post-details {
+  float: left;
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 20px;
   padding-right: 20px;
-  float: left;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 @media (min-width: 768px) {
   body.single-post .post-details {
@@ -5106,46 +5117,95 @@ body.single-post .post-details {
     margin-left: 0%;
   }
 }
-body.single-post .post-details .activity-date {
-  background-color: #3bb54a;
-  border-radius: 50%;
-  color: #fff;
-  display: inline-block;
-  left: 0;
-  height: 100px;
-  position: absolute;
-  text-align: center;
-  text-shadow: 1px 1px 0 #22682b;
-  top: 0;
-  width: 100px;
+@media screen and (max-width: 991px) {
+  body.single-post .post-details .activity-date {
+    background-color: #3bb54a;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    left: 0;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 1px 1px 0 #22682b;
+    top: 0;
+    width: 50px;
+  }
+  body.single-post .post-details .activity-date .day {
+    font-size: 12.5px;
+    left: 0;
+    line-height: 1em;
+    position: absolute;
+    right: 0;
+    top: 2px;
+  }
+  body.single-post .post-details .activity-date .month {
+    font-size: 17.5px;
+    left: 0;
+    line-height: 1em;
+    position: absolute;
+    right: 0;
+    top: 13.75px;
+  }
+  body.single-post .post-details .activity-date .date {
+    bottom: 1px;
+    font-size: 20px;
+    line-height: 1em;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+  body.single-post .post-details .activity-date {
+    top: -25px;
+  }
 }
-body.single-post .post-details .activity-date .day {
-  font-size: 25px;
-  left: 0;
-  line-height: 1em;
-  position: absolute;
-  right: 0;
-  top: 2px;
-}
-body.single-post .post-details .activity-date .month {
-  font-size: 35px;
-  left: 0;
-  line-height: 1em;
-  position: absolute;
-  right: 0;
-  top: 27.5px;
-}
-body.single-post .post-details .activity-date .date {
-  bottom: 1px;
-  font-size: 40px;
-  line-height: 1em;
-  left: 0;
-  position: absolute;
-  right: 0;
-}
-body.single-post .post-details .activity-date {
-  right: 0;
-  left: auto;
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body.single-post .post-details {
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  body.single-post .post-details .activity-date {
+    background-color: #3bb54a;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    left: 0;
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 1px 1px 0 #22682b;
+    top: 0;
+    width: 100px;
+  }
+  body.single-post .post-details .activity-date .day {
+    font-size: 25px;
+    left: 0;
+    line-height: 1em;
+    position: absolute;
+    right: 0;
+    top: 2px;
+  }
+  body.single-post .post-details .activity-date .month {
+    font-size: 35px;
+    left: 0;
+    line-height: 1em;
+    position: absolute;
+    right: 0;
+    top: 27.5px;
+  }
+  body.single-post .post-details .activity-date .date {
+    bottom: 1px;
+    font-size: 40px;
+    line-height: 1em;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+  body.single-post .post-details .activity-date {
+    right: 0;
+    left: auto;
+  }
 }
 body.single-post .post-content {
   position: relative;
