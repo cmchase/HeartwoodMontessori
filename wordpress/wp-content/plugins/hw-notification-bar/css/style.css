@@ -1,0 +1,124 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Clearings
+2.0 - WSNB Wrapper
+3.0 - Refinement
+4.0 - Links
+5.0 - Button
+6.0 - Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 - Clearings
+--------------------------------------------------------------*/
+.hw-notification-wrapper:before,
+.hw-notification-wrapper:after,
+.hw-notification-inside:before,
+.hw-notification-inside:after {
+  content: '';
+  display: table;
+}
+.hw-notification-wrapper:after,
+.hw-notification-inside:after {
+  clear: both;
+}
+
+/*--------------------------------------------------------------
+2.0 - WSNB Wrapper
+--------------------------------------------------------------*/
+.hw-notification-wrapper {
+	background: #ecebda;
+	border-bottom: 1px solid #ccc;
+	color: #000;
+	height: 46px;
+	line-height: 46px;
+	overflow: hidden;
+	padding: 0;
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999;
+}
+.hw-notification-notification {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+3.0 - Refinement
+--------------------------------------------------------------*/
+body.hw-notification {
+	margin-bottom: 46px !important;
+}
+body.admin-bar .hw-notification-wrapper {
+	top: 32px !important;
+}
+
+/*--------------------------------------------------------------
+4.0 - Links
+--------------------------------------------------------------*/
+.hw-notification-wrapper a.hw-notification-notification-link,
+.hw-notification-wrapper a.hw-notification-notification-link:visited {
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1;
+	text-decoration: none;
+}
+.hw-notification-wrapper a.hw-notification-notification-link:hover,
+.hw-notification-wrapper a.hw-notification-notification-link:focus,
+.hw-notification-wrapper a.hw-notification-notification-link:active {
+	color: #666;
+}
+
+/*--------------------------------------------------------------
+5.0 - Button
+--------------------------------------------------------------*/
+.hw-notification-wrapper a.hw-notification-button,
+.hw-notification-wrapper a.hw-notification-button:visited {
+	color: #fff;
+	display: inline-block;
+	background: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0 0 0 5px;
+	padding: 6px 8px;
+	text-decoration: none;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+}
+.hw-notification-wrapper a.hw-notification-button:hover,
+.hw-notification-wrapper a.hw-notification-button:focus,
+.hw-notification-wrapper a.hw-notification-button:active {
+	background: #666;
+}
+
+/*--------------------------------------------------------------
+6.0 Media Queries
+--------------------------------------------------------------*/
+/* Media Query is according to WordPress admin bar */
+@media screen and ( max-width: 782px ) {
+
+	/* WSNB Wrapper */
+	/*.hw-notification-wrapper {
+		height: 46px;
+		padding: 12px 0 0;
+	}*/
+
+	/* Refinement */
+	body.hw-notification {
+		margin-top: 46px !important;
+	}
+	body.admin-bar .hw-notification-wrapper {
+		top: 46px !important;
+	}
+
+}
