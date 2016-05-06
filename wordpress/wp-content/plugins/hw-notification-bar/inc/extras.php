@@ -302,7 +302,7 @@ function hw_notification_init() {
 
 	// Notification Bar Markup
 ?>
-<div class="hw-notification-wrapper">
+<div class="hw-notification-wrapper <?php echo hw_notification_option( 'notification_type' ); ?>">
 	<div class="hw-notification-inside">
 
 		<div class="hw-notification-notification">

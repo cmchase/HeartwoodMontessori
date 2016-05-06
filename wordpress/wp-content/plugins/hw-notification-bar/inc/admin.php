@@ -107,11 +107,14 @@ function hw_notification_settings() {
 	add_settings_field( 'hw_notification_field_button_display', __( 'Display Button', 'hw-notification' ), 'hw_notification_field_display_button_cb', 'hw_notification_section_config_page', 'hw_notification_section_config' );
 
 	/** Content Section */
+	add_settings_field( 'hw_notification_field_notification_type', __( 'Notification Type', 'hw-notification' ), 'hw_notification_field_notification_type_cb', 'hw_notification_section_content_page', 'hw_notification_section_content' );
 	add_settings_section( 'hw_notification_section_content', __( 'Notification Content', 'hw-notification' ), 'hw_notification_section_content_cb', 'hw_notification_section_content_page' );
 	add_settings_field( 'hw_notification_field_notification', __( 'Notification', 'hw-notification' ), 'hw_notification_field_notification_cb', 'hw_notification_section_content_page', 'hw_notification_section_content' );
-	add_settings_field( 'hw_notification_field_notification_link', __( 'Notification Link', 'hw-notification' ), 'hw_notification_field_notification_link_cb', 'hw_notification_section_content_page', 'hw_notification_section_content' );
 	add_settings_field( 'hw_notification_field_button_label', __( 'Button Label', 'hw-notification' ), 'hw_notification_field_button_label_cb', 'hw_notification_section_content_page', 'hw_notification_section_content' );
 	add_settings_field( 'hw_notification_field_button_link', __( 'Button Link', 'hw-notification' ), 'hw_notification_field_button_link_cb', 'hw_notification_section_content_page', 'hw_notification_section_content' );
+
+
+	// add_settings_field( 'hw_notification_field_notification_link', __( 'Notification Link', 'hw-notification' ), 'hw_notification_field_notification_link_cb', 'hw_notification_section_content_page', 'hw_notification_section_content' );
 
 	// /** Typography Section */
 	// add_settings_section( 'hw_notification_section_typography', __( 'Typography', 'hw-notification' ), 'hw_notification_section_typography_cb', 'hw_notification_section_typography_page' );
@@ -232,6 +235,25 @@ function hw_notification_google_fonts( $key = '' ) {
 
 }
 
+
+/**
+* Notification types
+*/
+function hw_notification_types( $key = '' ) {
+
+	$types = array(
+		'hw-notification-danger'    => 'Alert',
+		'hw-notification-info'   => 'Info',
+		'hw-notification-success'  => 'Positive',
+	);
+
+	if( ! empty( $key ) ) {
+		return $types[$key];
+	}
+
+	return $types;
+}
+
 /**
  * Plugin Settings Validation
  */
@@ -338,7 +360,7 @@ function hw_notification_section_content_cb() {
 function hw_notification_field_notification_cb() {
 
 	echo '<input type="text" id="notification" name="hw_notification_options[notification]" value="'. esc_attr( hw_notification_option( 'notification' ) ) .'" />';
-	echo '<div><code>'. __( 'Enter your notification.', 'hw-notification' ) .'</code></div>';
+	echo '<div><code>'. __( 'Enter your notification message.', 'hw-notification' ) .'</code></div>';
 
 }
 
@@ -371,6 +393,25 @@ function hw_notification_field_button_link_cb() {
 	echo '<div><code>'. __( 'Enter your button link.', 'hw-notification' ) .'</code></div>';
 
 }
+
+/**
+*	Notiication type
+*/
+
+function  hw_notification_field_notification_type_cb() {
+
+	$items = hw_notification_types();
+
+	echo '<select id="notification_type" name="hw_notification_options[notification_type]">';
+	foreach( $items as $key => $val ) {
+	?>
+    <option value="<?php echo esc_attr( $key ); ?>" <?php selected( $key, hw_notification_option( 'notification_type' ) ); ?>><?php echo esc_html( $val ); ?></option>
+    <?php
+	}
+	echo '</select>';
+	echo '<div><code>'. __( 'Select notification type: Alerts for super important items (red), Info for FYI items (blue) and Positive for good news (green).', 'hw-notification' ) .'</code></div>';
+}
+
 
 /**
  * Typography Section Callback

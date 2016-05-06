@@ -192,53 +192,53 @@
 /*------------------------------------*\
     Debug -- DELETE THIS
 \*------------------------------------*/
-body {
-	.sticky-header.scroll-up {
-		&::before {
-			content: "";
-			color: white;
-			top: 0;
-			left: 0;
-			position: fixed;
-			text-align: center;
-			width: 50px;
-			z-index: 9000;
-			content: 'sticky';
-			background-color: black;
-		}
-	}
-	&::after {
-		content: "";
-		color: white;
-		left: 0;
-		top: 0;
-		position: fixed;
-		text-align: center;
-		width: 50px;
-		z-index: 9000;
-		.media-xxs ({
-			content: "xxs";
-			background-color: red;
-		});
-		.media-xs({
-			content: "xs";
-			background-color: orange;
-		});
-		.media-sm({
-			content: "sm";
-			background-color: yellow;
-			color: black;
-		});
-		.media-md({
-			content: "md";
-			background-color: green;
-		});
-		.media-lg({
-			content: "default";
-			background-color: blue;
-		});
-	}
-}
+// body {
+// 	.sticky-header.scroll-up {
+// 		&::before {
+// 			content: "";
+// 			color: white;
+// 			top: 0;
+// 			left: 0;
+// 			position: fixed;
+// 			text-align: center;
+// 			width: 50px;
+// 			z-index: 9000;
+// 			content: 'sticky';
+// 			background-color: black;
+// 		}
+// 	}
+// 	&::after {
+// 		content: "";
+// 		color: white;
+// 		left: 0;
+// 		top: 0;
+// 		position: fixed;
+// 		text-align: center;
+// 		width: 50px;
+// 		z-index: 9000;
+// 		.media-xxs ({
+// 			content: "xxs";
+// 			background-color: red;
+// 		});
+// 		.media-xs({
+// 			content: "xs";
+// 			background-color: orange;
+// 		});
+// 		.media-sm({
+// 			content: "sm";
+// 			background-color: yellow;
+// 			color: black;
+// 		});
+// 		.media-md({
+// 			content: "md";
+// 			background-color: green;
+// 		});
+// 		.media-lg({
+// 			content: "default";
+// 			background-color: blue;
+// 		});
+// 	}
+// }
 
 
 
@@ -854,6 +854,131 @@ button {
 	top: 0;
 	bottom: 0;
 }
+
+
+/*------------------------------------*\
+    Notification bar
+\*------------------------------------*/
+
+.hw-notification-wrapper:before,
+.hw-notification-wrapper:after,
+.hw-notification-inside:before,
+.hw-notification-inside:after {
+  content: '';
+  display: table;
+}
+.hw-notification-wrapper:after,
+.hw-notification-inside:after {
+  clear: both;
+}
+
+.hw-notification-wrapper {
+	background: #ecebda;
+	border-top: 1px solid #ccc;
+	color: #000;
+	font-size: 18px;
+	font-weight: 600;
+	height: 50px;
+	line-height: 50px;
+	overflow: hidden;
+	padding: 0;
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999;
+	&.hw-notification-danger {
+		background-color: @color-red-dark;
+		border-color: @color-red-dark;
+		color: #fff;
+	}
+	&.hw-notification-info {
+		background-color: @color-blue-dark;
+		border-color: @color-blue-dark;
+		color: #fff;
+	}
+	&.hw-notification-success {
+		background-color: @color-green-dark;
+		border-color: @color-green-dark;
+		color: #fff;
+	}
+	.hw-notification-notification {
+		overflow: hidden;
+	}
+	.hw-notification-notification-link {
+		color: inherit;
+		text-decoration: none;
+		text-shadow: none;
+		&:visited {
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			color: inherit;
+			text-decoration: none;
+			text-shadow: none;
+		}
+	}
+}
+
+body.hw-notification {
+	margin-bottom: 46px !important;
+}
+body.admin-bar .hw-notification-wrapper {
+	top: 32px !important;
+}
+
+/*--------------------------------------------------------------
+4.0 - Links
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+5.0 - Button
+--------------------------------------------------------------*/
+.hw-notification-wrapper a.hw-notification-button,
+.hw-notification-wrapper a.hw-notification-button:visited {
+	color: #fff;
+	display: inline-block;
+	background: #000;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0 0 0 5px;
+	padding: 6px 8px;
+	text-decoration: none;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+}
+.hw-notification-wrapper a.hw-notification-button:hover,
+.hw-notification-wrapper a.hw-notification-button:focus,
+.hw-notification-wrapper a.hw-notification-button:active {
+	background: #666;
+}
+
+/*--------------------------------------------------------------
+6.0 Media Queries
+--------------------------------------------------------------*/
+/* Media Query is according to WordPress admin bar */
+@media screen and ( max-width: 782px ) {
+
+	/* WSNB Wrapper */
+	/*.hw-notification-wrapper {
+		height: 46px;
+		padding: 12px 0 0;
+	}*/
+
+	/* Refinement */
+	body.hw-notification {
+		margin-top: 46px !important;
+	}
+	body.admin-bar .hw-notification-wrapper {
+		top: 46px !important;
+	}
+
+}
+
 /*------------------------------------*\
     Splash page
 \*------------------------------------*/
@@ -1080,6 +1205,14 @@ body.single-post {
 			}
 		});
 		.media-md({
+			.padded-col();
+			.activity-date(@color-green-base, 100px);
+			.activity-date {
+				right: 0;
+				left: auto;
+			}
+		});
+		.media-lg({
 			.padded-col();
 			.activity-date(@color-green-base, 100px);
 			.activity-date {
