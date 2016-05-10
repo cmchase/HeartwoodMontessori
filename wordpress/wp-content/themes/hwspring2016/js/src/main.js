@@ -129,6 +129,10 @@ window.hw = {
 		// Let's replace the Contact Form 7 loading indicator
 		// with something a little more noticible.
 		$('img.ajax-loader').attr('src', hw.themeSrc + 'img/loading.gif');
+		$('.menu-category').on('click', function(event){
+			event.stopPropagation();
+			event.preventDefault();
+		});
 		$('.nav-trigger').on('click', function(event) {
 			event.stopPropagation();
 			$('body').toggleClass('nav-shown');

@@ -3280,63 +3280,6 @@ input[type="button"].btn-block {
 /*------------------------------------*\
     Debug -- DELETE THIS
 \*------------------------------------*/
-body .sticky-header.scroll-up::before {
-  content: "";
-  color: white;
-  top: 0;
-  left: 0;
-  position: fixed;
-  text-align: center;
-  width: 50px;
-  z-index: 9000;
-  content: 'sticky';
-  background-color: black;
-}
-body::after {
-  content: "";
-  color: white;
-  left: 0;
-  top: 0;
-  position: fixed;
-  text-align: center;
-  width: 50px;
-  z-index: 9000;
-}
-@media screen and (max-width: 480px) {
-  body::after {
-    content: "xxs";
-    background-color: red;
-  }
-}
-@media screen and (max-width: 767px) {
-  body::after {
-    content: "xs";
-    background-color: orange;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  body::after {
-    content: "sm";
-    background-color: yellow;
-    color: black;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  body::after {
-    content: "md";
-    background-color: green;
-  }
-}
-@media screen and (min-width: 1200px) {
-  body::after {
-    content: "default";
-    background-color: blue;
-  }
-}
-html.lt-ie9 body::after {
-  content: "default";
-  background-color: blue;
-}
 html,
 body {
   background-color: #ccc;
