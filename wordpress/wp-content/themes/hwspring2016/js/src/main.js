@@ -9,7 +9,7 @@ window.hw = {
 	daysAbbr: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
 	monthsAbbr: ['Jan','Feb','Mar','Apr','May','June','July','Aug','Sept','Oct','Nov','Dec'],
 
-	// This is one of those convenience methods you either don't 
+	// This is one of those convenience methods you either don't
 	// have to normally think about or have already written,
 	// but for a small project like this it's not really worth
 	// importing another library.
@@ -46,7 +46,7 @@ window.hw = {
 	}
 };
 
-(function ($, root, undefined) { 
+(function ($, root, undefined) {
 	'use strict';
 
 	if ($('#upcomingEvents').length > 0) {
@@ -70,10 +70,10 @@ window.hw = {
 		resizeCallback = hw.debounce(function(){
 			sizeContent();
 		}, 250);
-	
+
 	$('#main-nav .menu-item-has-children').each(function(){
 		var $this = $(this);
-		// Let's watch for touch devices so 
+		// Let's watch for touch devices so
 		// we can show our dropdowns correctly
 		if ($('html').hasClass('touch')) {
 			$this.click(function(event){
@@ -101,7 +101,7 @@ window.hw = {
 		$headerContainer.removeClass('scroll-up sticky-header');
 		stickyHeader = hw.debounce(function(){
 			if (window.scrollY > 50) {
-				if (window.scrollY < scrollDelta) {
+				if (window.scrollY <= scrollDelta) {
 					$headerContainer.addClass('scroll-up');
 				} else {
 					$headerContainer.removeClass('scroll-up');
@@ -115,7 +115,7 @@ window.hw = {
 	} else {
 		$headerContainer.addClass('scroll-up sticky-header');
 		stickyHeader = hw.debounce(function(){
-			if (window.scrollY < scrollDelta) {
+			if (window.scrollY <= scrollDelta) {
 				$headerContainer.addClass('scroll-up');
 			} else {
 				$headerContainer.removeClass('scroll-up');
@@ -138,7 +138,7 @@ window.hw = {
 			$('.hover').removeClass('hover');
 		})
 	})
-		
+
 	sizeContent();
 	window.addEventListener('resize', resizeCallback)
 	window.addEventListener('scroll', stickyHeader);
