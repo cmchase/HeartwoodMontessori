@@ -52,9 +52,9 @@
 			<article class="main">
 				<h1>Why Chose Heartwood Montessori</h1>
 
-				<p>At all levels and in all areas, <strong>Heartwood places the needs of the child first</strong>. The AMS credentialed staff believes that children, not subjects, are taught. At Heartwood Montessori School you are truly part of a community of parents, students and teachers. We are here to support you and your family in any way we can.</p>
+				<p>At all levels and in all areas, <strong>Heartwood places the needs of the child first</strong>. The AMS credentialed staff believes that children, not subjects, are taught. We encourage children to learn through self-motivation within a carefully prepared environment. Our multi-age setting offers the child an opportunity to relate to, and work with others at his/her developmental level.</p>
 
-				<p>The Montessori approach encourages children to learn through self-motivation within a carefully prepared environment. The multi-age setting offers the child an opportunity to relate to, and work with others at his/her developmental level.</p>
+				<p>At Heartwood Montessori School you are truly part of a community of parents, students and teachers. We are here to support you and your family.</p>
 			</article>
 		</section>
 
@@ -72,9 +72,9 @@
 			<article class="main">
 					<h1>Our Philosophy</h1>
 
-					<p>The cornerstone of Heartwood's philosophy is the respect it has for it's students and their cognitive, social and emotional development. At Heartwood we recognize that a child is more responsive to certain learning experiences at particular times in their development. By carefully looking for and respecting these "sensitive periods" in their growth, teachers are able to maximize student learning while maintaining and even expanding the child's nature curiosity and interest in learning.</p>
+					<p>The cornerstone of Heartwood's philosophy is the respect it has for its students and their cognitive, social and emotional development. We recognize that a child is more responsive to certain learning experiences at particular times in their development. By carefully looking for and respecting these "sensitive periods", teachers are able to maximize student learning while maintaining and even expanding the child's nature curiosity and interest in learning.</p>
 
-					<p>As practioners of Peace Education, we believe that the most important role a teacher plays in their students social and emotional growth is to provide an environment deliberately designed to promote the development of peaceful individuals and interactions. </p>
+					<p>As practitioners of Peace Education, we believe that one of the most important roles a teacher plays is to provide an environment deliberately designed to promote the development of peaceful individuals and interactions.</p>
 			</article>
 
 			<article class="module module-1">
