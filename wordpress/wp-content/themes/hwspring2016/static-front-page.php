@@ -3,7 +3,13 @@
 	<main class="main-content" role="main">
 
 		<section class="hero hero-header">
-			<img src="<?= get_template_directory_uri(); ?>/img/splash/hero-header04.jpg" alt="Heartwood Montessori School serves all ages throughout Raleigh, Cary, Morrisville and Apex North Carolina" />
+				<picture>
+					<source media="print" srcset="<?= get_template_directory_uri(); ?>/img/splash/hero-header04-md.jpg">
+					<source media="(max-width: 480px)" srcset="<?= get_template_directory_uri(); ?>/img/splash/hero-header04-sm.jpg">
+					<source media="(max-width: 640px)" srcset="<?= get_template_directory_uri(); ?>/img/splash/hero-header04-md.jpg">
+					<source media="(max-width: 1024px)" srcset="<?= get_template_directory_uri(); ?>/img/splash/hero-header04-lg.jpg">
+					<img src="<?= get_template_directory_uri(); ?>/img/splash/hero-header04-lg.jpg" alt="Heartwood Montessori School serves all ages throughout Raleigh, Cary, Morrisville and Apex North Carolina">
+				</picture>
 		</section>
 
 		<section class="splash-row-intro">
@@ -33,14 +39,13 @@
 		</section>
 
 		<section class="hero">
-		<img
-			srcset="<?= get_template_directory_uri(); ?>/img/splash/hero02-lg.jpg	1270w,
-			        <?= get_template_directory_uri(); ?>/img/splash/hero02-md.jpg	768w,
-			        <?= get_template_directory_uri(); ?>/img/splash/hero02-sm.jpg   480w"
-			src="<?= get_template_directory_uri(); ?>/img/splash/hero02-md.jpg"
-			sizes="100vw"
-			alt="The child should live in an environment of beauty. - Maria Montessori"
-		/>
+			<picture>
+				<source media="print" srcset="<?= get_template_directory_uri(); ?>/img/splash/hero02-md.jpg">
+				<source media="(max-width: 480px)" srcset="<?= get_template_directory_uri(); ?>/img/splash/hero02-sm.jpg">
+				<source media="(max-width: 640px)" srcset="<?= get_template_directory_uri(); ?>/img/splash/hero02-md.jpg">
+				<source media="(max-width: 1024px)" srcset="<?= get_template_directory_uri(); ?>/img/splash/hero02-lg.jpg">
+				<img src="<?= get_template_directory_uri(); ?>/img/splash/hero02-lg.jpg" alt="The child should live in an environment of beauty. - Maria Montessori">
+			</picture>
 		</section>
 
 		<section class="splash-row-centered">
@@ -54,7 +59,13 @@
 		</section>
 
 		<section class="hero">
-			<img src="<?= get_template_directory_uri(); ?>/img/splash/hero01.jpg" alt="To assist a child we must provide him with an environment which will enable him to to develop freely. - Maria Montessori" />
+				<picture>
+					<source media="print" srcset="<?= get_template_directory_uri(); ?>/img/splash/hero01-md.jpg">
+					<source media="(max-width: 480px)" srcset="<?= get_template_directory_uri(); ?>/img/splash/hero01-sm.jpg">
+					<source media="(max-width: 640px)" srcset="<?= get_template_directory_uri(); ?>/img/splash/hero01-md.jpg">
+					<source media="(max-width: 1024px)" srcset="<?= get_template_directory_uri(); ?>/img/splash/hero01-lg.jpg">
+					<img src="<?= get_template_directory_uri(); ?>/img/splash/hero01-lg.jpg" alt="To assist a child we must provide him with an environment which will enable him to to develop freely. - Maria Montessori">
+				</picture>
 		</section>
 
 		<section class="splash-row-modules">
