@@ -52,7 +52,19 @@ window.hw = {
     var bg = 'f6f6f6';
     var color = 'ff0000';
     var mode = (viewWidth > 1024) ? 'MONTH' : 'AGENDA'; // MONTH, AGENDA, WEEK
-		var html = '<iframe id="googleCalIframe" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;mode=' + mode + '&amp;bgcolor=%23' + bg + '&amp;src=' + calId + '&amp;color=%23' + color + '&amp;ctz=America%2FNew_York" style="border-width:0" width="' + width + '" height="' + height + '" frameborder="0" scrolling="no"></iframe>"';
+		var html = '<iframe id="googleCalIframe" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;mode='
+			+ mode
+			+ '&amp;bgcolor=%23'
+			+ bg
+			+ '&amp;src='
+			+ calId
+			+ '&amp;color=%23'
+			+ color
+			+ '&amp;ctz=America%2FNew_York" style="border-width:0" width="'
+			+ width
+			+ '" height="'
+			+ height
+			+ '" frameborder="0" scrolling="no"></iframe>"';
 
 		return html;
 	}

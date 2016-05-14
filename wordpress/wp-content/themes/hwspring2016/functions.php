@@ -513,26 +513,6 @@ function hw_meta_boxes( $meta_boxes ) {
 \*------------------------------------*/
 function hw_google_cal_shortcode() {
   return '<div id="googleCalendar"></div>';
-    // $calId = '';
-    // return '<iframe src="https://calendar.google.com/calendar/embed?src=&ctz=America/New_York" class="event-calendar" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>';
-    // $calId = 'heartwoodmontessori.com_5m7fci1sql1nmfsp1dc3lk69n0%40group.calendar.google.com';
-    // $height = '600';
-    // $width = '100%';
-    // $bg = 'f6f6f6';
-    // $color = 'ff0000';
-    // $mode = 'MONTH'; // MONTH, AGENDA, WEEK
-    // return '<iframe id="googleCalIframe" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;'
-    // . 'height=600&amp;wkst=1&amp;mode='
-    // . $mode
-    // . '&amp;bgcolor=%23'
-    // . $bg
-    // .'&amp;src='
-    // . $calId
-    // . '&amp;color=%23'
-    // . $color
-    // . '&amp;ctz=America%2FNew_York" style="border-width:0" width="'
-    // . $width
-    // . '" height="600" frameborder="0" scrolling="no"></iframe>';
 }
 
 
