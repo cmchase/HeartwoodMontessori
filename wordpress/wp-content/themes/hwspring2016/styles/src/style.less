@@ -1104,7 +1104,7 @@ body.admin-bar .hw-notification-wrapper {
 	}
 }
 .splash-row-posts {
-	// Hidden until we get posts
+	// TODO: Hidden until we get posts
 	display: none;
 	//
 	@color: @color-green-base;
@@ -1354,7 +1354,15 @@ body.post-template-post-full {
 	}
 }
 
+.search-input {
+	border: 1px solid @color-gray-light;
+
+	border-radius: 4px;
+	padding: 6px 4px;
+}
+
 .widget_hw_posts {
+	display: none; // TODO: Hidden until we have posts
 	.activity-list(@color-green-base);
 	.icon {
 		.glyphicon-list-alt();

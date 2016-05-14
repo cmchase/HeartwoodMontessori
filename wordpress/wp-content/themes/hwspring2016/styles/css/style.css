@@ -5848,6 +5848,14 @@ body.post-template-post-full .post-content {
 .widget_hw_cal .icon:before {
   content: "\e109";
 }
+.search-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 4px;
+}
+.widget_hw_posts {
+  display: none;
+}
 .widget_hw_posts .activity-list {
   list-style: none;
   margin: 0;
