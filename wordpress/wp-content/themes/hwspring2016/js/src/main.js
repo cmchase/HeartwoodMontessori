@@ -30,6 +30,7 @@ window.hw = {
 		return hh + ':' + mm + ' ' + tt;
 	},
 	// https://davidwalsh.name/javascript-debounce-function
+
 	debounce: function(func, wait, immediate) {
 		var timeout;
 		return function() {
@@ -43,6 +44,17 @@ window.hw = {
 			timeout = setTimeout(later, wait);
 			if (callNow) func.apply(context, args);
 		};
+	},
+	createGoogleCalendar: function(viewWidth){
+		var calId = 'heartwoodmontessori.com_5m7fci1sql1nmfsp1dc3lk69n0%40group.calendar.google.com';
+    var height = '600';
+    var width = '100%';
+    var bg = 'f6f6f6';
+    var color = 'ff0000';
+    var mode = (viewWidth > 1024) ? 'MONTH' : 'AGENDA'; // MONTH, AGENDA, WEEK
+		var html = '<iframe id="googleCalIframe" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;mode=' + mode + '&amp;bgcolor=%23' + bg + '&amp;src=' + calId + '&amp;color=%23' + color + '&amp;ctz=America%2FNew_York" style="border-width:0" width="' + width + '" height="' + height + '" frameborder="0" scrolling="no"></iframe>"';
+
+		return html;
 	}
 };
 
@@ -129,7 +141,7 @@ window.hw = {
 		// Let's replace the Contact Form 7 loading indicator
 		// with something a little more noticible.
 		$('img.ajax-loader').attr('src', hw.themeSrc + 'img/loading.gif');
-		$('.menu-category').on('click', function(event){
+		$('.menu-category > a').on('click', function(event){
 			event.stopPropagation();
 			event.preventDefault();
 		});
@@ -144,6 +156,10 @@ window.hw = {
 	})
 
 	sizeContent();
+
+	if ($('#googleCalendar').length > 0) {
+		$('#googleCalendar').html(hw.createGoogleCalendar(viewWidth));
+	}
 	window.addEventListener('resize', resizeCallback)
 	window.addEventListener('scroll', stickyHeader);
 

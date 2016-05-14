@@ -1054,7 +1054,7 @@ body.admin-bar .hw-notification-wrapper {
 .splash-row-modules {
 	.make-row(0);
 	.padded-row();
-	margin-bottom: 0;
+	//margin-bottom: 0;
 	.media-sm({
 		float: none;
 		width: 650px;
@@ -1104,6 +1104,9 @@ body.admin-bar .hw-notification-wrapper {
 	}
 }
 .splash-row-posts {
+	// Hidden until we get posts
+	display: none;
+	//
 	@color: @color-green-base;
 	.activity-list(@color);
 	.make-row(0);

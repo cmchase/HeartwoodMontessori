@@ -23,13 +23,13 @@
 				<h1>A Warm &amp; Welcoming
 				<span class="soft-break">Montessori Experience</span></h1>
 
-				<p>Heartwood Montessori School provides students with an authentic Montessori education. Certified teachers use authentic materials to teach a wide range of Montessori works including the five Great Lessons.</p>
+				<p>Heartwood Montessori School provides students with an authentic Montessori experience, including the Great Lessons.  Our certified teachers have prepared their classrooms with the full compliment of Montessori equipment at all levels.</p>
 
-				<p>Peace Eduction is at the heart of everything we do. Heartwood Montessori School prides itself on the respect we show our students and the community we build with our families.</p>
+				<p>Peace Education is at the <strong>HEART</strong> of our core curriculum.  Heartwood prides itself on the respect we show our students and the community we build with our families.</p>
 
 				<h1>Quality Education for Students 18 Months to 18 Years</h1>
 
-				<p>Heartwood Montessori School serves students aged 18 months to 18 years. In addition to the Montessori curriculum presented by our certified teachers, students are also provided lessons in art, movement and Spanish.</p>
+				<p>Heartwood Montessori School serves students aged 18 months to 18 years. In addition to the Montessori curriculum presented by our certified teachers, students are also provided lessons in art, movement, Spanish, Physical Education, YOGA, and opportunities for private music lessons with piano, violin, and guitar.</p>
 
 			</article>
 			<article class="events-col">

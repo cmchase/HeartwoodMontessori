@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: HW Notification Bar
-Plugin URI: http://designorbital.com/easy-sticky-notification-bar/
+Plugin URI:
 Description: Site-wide messages for promotion and emergency communication. Derived from Easy Sticky Notification Bar plugin.
 Author:
 Author URI:

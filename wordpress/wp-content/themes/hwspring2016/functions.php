@@ -32,7 +32,7 @@ if (function_exists('add_theme_support'))
  //    add_theme_support('custom-background', array(
 	// 'default-color' => 'FFF',
 	// 'default-image' => get_template_directory_uri() . '/img/bg.jpg'
- //    )); 
+ //    ));
 
     // Add Support for Custom Header - Uncomment below if you're going to use
  //    add_theme_support('custom-header', array(
@@ -124,12 +124,12 @@ function heartwood_footer_scripts()
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
 
         wp_register_script('bundle', get_template_directory_uri() . '/js/bundle.js', array(), '1.0.0');
-        wp_enqueue_script('bundle'); 
+        wp_enqueue_script('bundle');
         wp_register_script('gapiClient', get_template_directory_uri() . '/js/gapiClient.js', array(), '1'); // Conditionizr
         wp_enqueue_script('gapiClient'); // Enqueue it!
         wp_register_script('gapi', 'https://apis.google.com/js/client.js?onload=gapiOnLoadCallback', array(), '1');
-        wp_enqueue_script('gapi'); 
-        
+        wp_enqueue_script('gapi');
+
 
     }
 }
@@ -219,7 +219,7 @@ if (function_exists('register_sidebar'))
         'after_title' => '</h3>'
     ));
 
-  
+
 }
 
 // Remove wp_head() injected Recent Comment styles
@@ -377,7 +377,7 @@ function heartwoodcomments($comment, $args, $depth)
 
 // Add Actions
 add_action('init', 'heartwood_header_scripts'); // Add Custom Scripts to wp_head
-add_action('wp_footer', 'heartwood_footer_scripts'); 
+add_action('wp_footer', 'heartwood_footer_scripts');
 add_action('wp_print_scripts', 'heartwood_conditional_scripts'); // Add Conditio
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'heartwood_styles'); // Add Theme Stylesheet
@@ -512,26 +512,27 @@ function hw_meta_boxes( $meta_boxes ) {
 	ShortCode Functions
 \*------------------------------------*/
 function hw_google_cal_shortcode() {
+  return '<div id="googleCalendar"></div>';
     // $calId = '';
     // return '<iframe src="https://calendar.google.com/calendar/embed?src=&ctz=America/New_York" class="event-calendar" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>';
-    $calId = 'heartwoodmontessori.com_5m7fci1sql1nmfsp1dc3lk69n0%40group.calendar.google.com';
-    $height = '600';
-    $width = '100%';
-    $bg = 'f6f6f6';
-    $color = 'ff0000';
-    $mode = 'MONTH'; // MONTH, AGENDA, WEEK
-    return '<iframe id="googleCalIframe" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;' 
-    . 'height=600&amp;wkst=1&amp;mode='
-    . $mode
-    . '&amp;bgcolor=%23' 
-    . $bg 
-    .'&amp;src=' 
-    . $calId 
-    . '&amp;color=%23'
-    . $color
-    . '&amp;ctz=America%2FNew_York" style="border-width:0" width="' 
-    . $width
-    . '" height="600" frameborder="0" scrolling="no"></iframe>';
+    // $calId = 'heartwoodmontessori.com_5m7fci1sql1nmfsp1dc3lk69n0%40group.calendar.google.com';
+    // $height = '600';
+    // $width = '100%';
+    // $bg = 'f6f6f6';
+    // $color = 'ff0000';
+    // $mode = 'MONTH'; // MONTH, AGENDA, WEEK
+    // return '<iframe id="googleCalIframe" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;'
+    // . 'height=600&amp;wkst=1&amp;mode='
+    // . $mode
+    // . '&amp;bgcolor=%23'
+    // . $bg
+    // .'&amp;src='
+    // . $calId
+    // . '&amp;color=%23'
+    // . $color
+    // . '&amp;ctz=America%2FNew_York" style="border-width:0" width="'
+    // . $width
+    // . '" height="600" frameborder="0" scrolling="no"></iframe>';
 }
 
 
@@ -547,5 +548,5 @@ function heartwood_shortcode_demo_2($atts, $content = null) // Demo Heading H2 s
     return '<h2>' . $content . '</h2>';
 }
 
-add_filter( 'rwmb_meta_boxes', 'hw_meta_boxes' ); 
+add_filter( 'rwmb_meta_boxes', 'hw_meta_boxes' );
 ?>

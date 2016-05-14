@@ -4789,7 +4789,6 @@ body.admin-bar .hw-notification-wrapper {
   float: left;
   margin-bottom: 20px;
   margin-top: 20px;
-  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .splash-row-modules {
@@ -4872,6 +4871,7 @@ html.lt-ie9 .splash-row-modules .module {
   padding: 0;
 }
 .splash-row-posts {
+  display: none;
   margin-left: 0;
   margin-right: 0;
   float: left;
