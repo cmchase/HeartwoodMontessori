@@ -3280,6 +3280,63 @@ input[type="button"].btn-block {
 /*------------------------------------*\
     Debug -- DELETE THIS
 \*------------------------------------*/
+body .sticky-header.scroll-up::before {
+  content: "";
+  color: white;
+  top: 0;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 50px;
+  z-index: 9000;
+  content: 'sticky';
+  background-color: black;
+}
+body::after {
+  content: "";
+  color: white;
+  left: 0;
+  top: 0;
+  position: fixed;
+  text-align: center;
+  width: 50px;
+  z-index: 9000;
+}
+@media screen and (max-width: 480px) {
+  body::after {
+    content: "xxs";
+    background-color: red;
+  }
+}
+@media screen and (max-width: 767px) {
+  body::after {
+    content: "xs";
+    background-color: orange;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body::after {
+    content: "sm";
+    background-color: yellow;
+    color: black;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body::after {
+    content: "md";
+    background-color: green;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body::after {
+    content: "default";
+    background-color: blue;
+  }
+}
+html.lt-ie9 body::after {
+  content: "default";
+  background-color: blue;
+}
 html,
 body {
   background-color: #ccc;
@@ -3677,7 +3734,7 @@ html.lt-ie9 .main-header .nav ul li a {
   opacity: 0;
   top: 48px;
   transition: all .15s linear;
-  min-width: 100%;
+  min-width: 250px;
   z-index: 100;
 }
 .main-header .nav ul li ul.sub-menu li {
@@ -5642,6 +5699,27 @@ body.single-post .post-sidebar {
 /*------------------------------------*\
     Standard & Single Page
 \*------------------------------------*/
+body.page .post-header {
+  text-align: center;
+  padding: 50px;
+}
+@media screen and (max-width: 991px) {
+  body.page .post-header {
+    padding: 10px;
+  }
+}
+body.page .post-header .post-title {
+  color: #6cacc4;
+  margin: 0;
+}
+body.page .post-header .post-author .author-intro {
+  color: #656263;
+  font-style: italic;
+  margin-right: 3px;
+}
+body.page .post-header .post-author .author-name {
+  font-weight: 700;
+}
 body.page .post-content {
   position: relative;
   min-height: 1px;
@@ -5661,6 +5739,10 @@ body.page .post-content {
   body.page .post-content {
     margin-left: 8.33333333%;
   }
+}
+body.page .post-content article > h2 {
+  color: #0e8015;
+  margin-top: 0;
 }
 body.page .post-sidebar {
   position: relative;
@@ -6043,6 +6125,21 @@ body.post-template-post-full .post-content {
 /*------------------------------------*\
     WORDPRESS CORE
 \*------------------------------------*/
+@media screen and (max-width: 767px) {
+  .mobileMedia {
+    background: red;
+    clear: both;
+    float: none;
+    margin: 10px auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .mobileMedia {
+    clear: both;
+    float: none;
+    margin: 10px auto;
+  }
+}
 .alignnone {
   margin: 5px 20px 20px 0;
 }
@@ -6051,13 +6148,60 @@ div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
+@media screen and (max-width: 767px) {
+  .aligncenter,
+  div.aligncenter {
+    background: red;
+    clear: both;
+    float: none;
+    margin: 10px auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .aligncenter,
+  div.aligncenter {
+    clear: both;
+    float: none;
+    margin: 10px auto;
+  }
+}
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
+@media screen and (max-width: 767px) {
+  .alignright {
+    background: red;
+    clear: both;
+    float: none;
+    margin: 10px auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .alignright {
+    clear: both;
+    float: none;
+    margin: 10px auto;
+  }
+}
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
+}
+@media screen and (max-width: 767px) {
+  .alignleft {
+    background: red;
+    clear: both;
+    float: none;
+    margin: 10px auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .alignleft {
+    clear: both;
+    float: none;
+    margin: 10px auto;
+  }
 }
 a img.alignright {
   float: right;
@@ -6081,15 +6225,6 @@ a img.aligncenter {
   max-width: 96%;
   padding: 5px 3px 10px;
   text-align: center;
-}
-.wp-caption.alignnone {
-  margin: 5px 20px 20px 0;
-}
-.wp-caption.alignleft {
-  margin: 5px 20px 20px 0;
-}
-.wp-caption.alignright {
-  margin: 5px 0 20px 20px;
 }
 .wp-caption img {
   border: 0 none;

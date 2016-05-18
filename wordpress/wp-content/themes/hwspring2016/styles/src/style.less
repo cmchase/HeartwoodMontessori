@@ -192,53 +192,53 @@
 /*------------------------------------*\
     Debug -- DELETE THIS
 \*------------------------------------*/
-// body {
-// 	.sticky-header.scroll-up {
-// 		&::before {
-// 			content: "";
-// 			color: white;
-// 			top: 0;
-// 			left: 0;
-// 			position: fixed;
-// 			text-align: center;
-// 			width: 50px;
-// 			z-index: 9000;
-// 			content: 'sticky';
-// 			background-color: black;
-// 		}
-// 	}
-// 	&::after {
-// 		content: "";
-// 		color: white;
-// 		left: 0;
-// 		top: 0;
-// 		position: fixed;
-// 		text-align: center;
-// 		width: 50px;
-// 		z-index: 9000;
-// 		.media-xxs ({
-// 			content: "xxs";
-// 			background-color: red;
-// 		});
-// 		.media-xs({
-// 			content: "xs";
-// 			background-color: orange;
-// 		});
-// 		.media-sm({
-// 			content: "sm";
-// 			background-color: yellow;
-// 			color: black;
-// 		});
-// 		.media-md({
-// 			content: "md";
-// 			background-color: green;
-// 		});
-// 		.media-lg({
-// 			content: "default";
-// 			background-color: blue;
-// 		});
-// 	}
-// }
+body {
+	.sticky-header.scroll-up {
+		&::before {
+			content: "";
+			color: white;
+			top: 0;
+			left: 0;
+			position: fixed;
+			text-align: center;
+			width: 50px;
+			z-index: 9000;
+			content: 'sticky';
+			background-color: black;
+		}
+	}
+	&::after {
+		content: "";
+		color: white;
+		left: 0;
+		top: 0;
+		position: fixed;
+		text-align: center;
+		width: 50px;
+		z-index: 9000;
+		.media-xxs ({
+			content: "xxs";
+			background-color: red;
+		});
+		.media-xs({
+			content: "xs";
+			background-color: orange;
+		});
+		.media-sm({
+			content: "sm";
+			background-color: yellow;
+			color: black;
+		});
+		.media-md({
+			content: "md";
+			background-color: green;
+		});
+		.media-lg({
+			content: "default";
+			background-color: blue;
+		});
+	}
+}
 
 
 
@@ -401,18 +401,6 @@ button {
 					line-height: @header-height;
 					text-decoration: none;
 					.text-shadow(darken(@color-blue-dark, 15%));
-					// .media-xxs ({
-					// 	padding: 0 1px;
-					// 	font-size: .5em;
-					// });
-					// .media-xs ({
-					// 	padding: 0 5px;
-					// 	font-size: .7em;
-					// });
-					// .media-sm ({
-					// 	padding: 0 12px;
-					// 	font-size: 1em;
-					// });
 					.media-md({
 						padding: 0 1em;
 						font-size: 1.2em;
@@ -447,7 +435,7 @@ button {
 					opacity: 0;
 					top: @header-height - 2px;
 					transition: all .15s linear;
-					min-width: 100%;
+					min-width: 250px; //100%?
 					z-index: 100;
 					li {
 						display: block;
@@ -1339,10 +1327,35 @@ body.single-post {
 \*------------------------------------*/
 
 body.page {
+	.post-header {
+		text-align: center;
+		padding: 50px;
+		.media-sm-max({
+			padding: 10px;
+		});
+		.post-title {
+			color: @color-blue-base;
+			margin: 0;
+		}
+		.post-author {
+			.author-intro {
+				color: @color-gray;
+				font-style: italic;
+				margin-right: 3px;
+			}
+			.author-name {
+				font-weight: 700;
+			}
+		}
+	}
 	.post-content {
 		.make-default-column(8);
 		.make-md-column-offset(1);
 		.padded-col();
+		article > h2 {
+			color: @color-green-dark;
+			margin-top: 0;
+		}
 	}
 	.post-sidebar {
 		.make-default-column(3);
@@ -1422,7 +1435,19 @@ body.post-template-post-full {
 /*------------------------------------*\
     WORDPRESS CORE
 \*------------------------------------*/
-
+.mobileMedia {
+	.media-xs({
+		background: red;
+		clear: both;
+		float: none;
+		margin: 10px auto;
+	});
+	.media-sm({
+		clear: both;
+		float: none;
+		margin: 10px auto;
+	});
+}
 .alignnone {
 	margin:5px 20px 20px 0;
 }
@@ -1430,15 +1455,19 @@ body.post-template-post-full {
 div.aligncenter {
 	display:block;
 	margin:5px auto 5px auto;
+	.mobileMedia();
 }
 .alignright {
 	float:right;
 	margin:5px 0 20px 20px;
+	.mobileMedia();
 }
 .alignleft {
 	float:left;
 	margin:5px 20px 20px 0;
+	.mobileMedia();
 }
+
 a img.alignright {
 	float:right;
 	margin:5px 0 20px 20px;
@@ -1462,15 +1491,15 @@ a img.aligncenter {
 	padding:5px 3px 10px;
 	text-align:center;
 }
-.wp-caption.alignnone {
-	margin:5px 20px 20px 0;
-}
-.wp-caption.alignleft {
-	margin:5px 20px 20px 0;
-}
-.wp-caption.alignright {
-	margin:5px 0 20px 20px;
-}
+// .wp-caption.alignnone {
+// 	margin:5px 20px 20px 0;
+// }
+// .wp-caption.alignleft {
+// 	margin:5px 20px 20px 0;
+// }
+// .wp-caption.alignright {
+// 	margin:5px 0 20px 20px;
+// }
 .wp-caption img {
 	border:0 none;
 	height:auto;

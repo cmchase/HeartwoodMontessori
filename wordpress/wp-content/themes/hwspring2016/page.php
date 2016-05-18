@@ -2,11 +2,25 @@
 
 <main class="main-content" role="main">
 
+<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+		<section class="post-header">
+			<h1 class="post-title">
+				<?php the_title(); ?>
+			</h1>
+		</section>
+
+	<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+		<section class="hero">
+		<?php
+			the_post_thumbnail();
+			if (has_excerpt(get_post_thumbnail_id())) {
+					echo "<span class='caption'><span class='caption-text'>" . get_post(get_post_thumbnail_id())->post_excerpt . "</span></span>";
+				}
+		?>
+		</section>
+	<?php endif; ?>
+
 	<section class="post-content">
-
-		<h1 class="page-title"><?php the_title(); ?></h1>
-
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -22,10 +36,13 @@
 		</article>
 		<!-- /article -->
 
+	</section>
+
 	<?php endwhile; ?>
 
 	<?php else: ?>
 
+	<section class="post-content">
 		<!-- article -->
 		<article>
 
