@@ -654,6 +654,10 @@ button {
 		.media-xs({
 			display: none;
 		});
+		form {
+			position: relative;
+			float: left;
+		}
 		.make-sm-column(6);
 		.ajax-loader {
 			position: absolute;
@@ -661,11 +665,35 @@ button {
 			margin-left: -220px/2; // Width of loading indicator divided by 2.
 			bottom: 10px;
 		}
+		.wpcf7-response-output {
+			bottom: 0;
+			font-weight: bold;
+			left: 0;
+			margin: 0 5px;
+			position: absolute;
+			right: 0;
+			&.wpcf7-mail-sent-ok {
+				background: @color-green-lighter;
+				border: 1px solid @color-green-light;
+				border-radius: 4px;
+				font-size: 16px;
+				line-height: 90px;
+				text-align: center;
+				top: 0;
+			}
+			&.wpcf7-validation-errors {
+				color: @color-red-dark;
+				border: none;
+			}
+		}
 		.wpcf7-form-control-wrap {
 			float: left;
 			margin: 10px;
 			width: 40%;
 			margin: 0 5% 10px;
+			span.wpcf7-not-valid-tip {
+				color: @color-red-dark;
+			}
 			&.contact-message {
 				margin: 0 5% 10px;
 				width: 90%;

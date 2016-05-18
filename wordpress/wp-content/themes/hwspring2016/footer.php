@@ -8,10 +8,6 @@
 					</div>
 					<div class="form-col">
 						<?php echo do_shortcode('[contact-form-7 id="140" title="Footer Contact"]'); ?>
-						<!-- <input type="text" id="contactName" class="name" placeholder="Name" />
-						<input type="email" id="contactEmail" class="email" placeholder="Email Address" />
-						<textarea id="contactMessage" class="message" placeholder="Questions and Comments"></textarea>
-						<button>Submit</button> -->
 					</div>
 					<div class="info-col">
 						<address>
@@ -31,7 +27,7 @@
 								</li>
 							</ul>
 
-							
+
 						</address>
 					</div>
 				</article>
@@ -60,7 +56,7 @@
 
 				<div class="footer-branding">
 					<a href="<?php echo home_url(); ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/logo-footer.png" alt="Heartwood Montessori" /> 
+						<img src="<?php echo get_template_directory_uri(); ?>/img/logo-footer.png" alt="Heartwood Montessori" />
 					</a>
 					<p class="copyright">
 						&copy; 2005-<?php echo date('Y'); ?> Heartwood Montessori School

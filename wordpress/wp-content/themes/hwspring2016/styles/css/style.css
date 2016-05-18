@@ -3916,6 +3916,10 @@ html.lt-ie9 .main-header .nav ul li a {
     display: none;
   }
 }
+.contact-section .form-col form {
+  position: relative;
+  float: left;
+}
 @media (min-width: 768px) {
   .contact-section .form-col {
     float: left;
@@ -3928,11 +3932,35 @@ html.lt-ie9 .main-header .nav ul li a {
   margin-left: -110px;
   bottom: 10px;
 }
+.contact-section .form-col .wpcf7-response-output {
+  bottom: 0;
+  font-weight: bold;
+  left: 0;
+  margin: 0 5px;
+  position: absolute;
+  right: 0;
+}
+.contact-section .form-col .wpcf7-response-output.wpcf7-mail-sent-ok {
+  background: #9fdba7;
+  border: 1px solid #76cb81;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 90px;
+  text-align: center;
+  top: 0;
+}
+.contact-section .form-col .wpcf7-response-output.wpcf7-validation-errors {
+  color: #80000d;
+  border: none;
+}
 .contact-section .form-col .wpcf7-form-control-wrap {
   float: left;
   margin: 10px;
   width: 40%;
   margin: 0 5% 10px;
+}
+.contact-section .form-col .wpcf7-form-control-wrap span.wpcf7-not-valid-tip {
+  color: #80000d;
 }
 .contact-section .form-col .wpcf7-form-control-wrap.contact-message {
   margin: 0 5% 10px;
