@@ -3280,63 +3280,6 @@ input[type="button"].btn-block {
 /*------------------------------------*\
     Debug -- DELETE THIS
 \*------------------------------------*/
-body .sticky-header.scroll-up::before {
-  content: "";
-  color: white;
-  top: 0;
-  left: 0;
-  position: fixed;
-  text-align: center;
-  width: 50px;
-  z-index: 9000;
-  content: 'sticky';
-  background-color: black;
-}
-body::after {
-  content: "";
-  color: white;
-  left: 0;
-  top: 0;
-  position: fixed;
-  text-align: center;
-  width: 50px;
-  z-index: 9000;
-}
-@media screen and (max-width: 480px) {
-  body::after {
-    content: "xxs";
-    background-color: red;
-  }
-}
-@media screen and (max-width: 767px) {
-  body::after {
-    content: "xs";
-    background-color: orange;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  body::after {
-    content: "sm";
-    background-color: yellow;
-    color: black;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  body::after {
-    content: "md";
-    background-color: green;
-  }
-}
-@media screen and (min-width: 1200px) {
-  body::after {
-    content: "default";
-    background-color: blue;
-  }
-}
-html.lt-ie9 body::after {
-  content: "default";
-  background-color: blue;
-}
 html,
 body {
   background-color: #ccc;
@@ -3376,6 +3319,9 @@ a:hover {
 }
 strong {
   font-weight: 700;
+}
+iframe {
+  max-width: 100% !important;
 }
 article h1:first-of-type {
   margin-top: 0;
@@ -3696,6 +3642,9 @@ html.lt-ie9  .soft-break {
   line-height: 50px;
   text-decoration: none;
   text-shadow: 1px 1px 0 #1c475c;
+}
+.main-header .nav ul li a:hover {
+  background-color: #2e7497;
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .main-header .nav ul li a {
@@ -4409,19 +4358,19 @@ html.lt-ie9 .contact-section .info-col .telephone a:hover {
 @media (min-width: 1200px) {
   .main-footer .footer-branding {
     float: left;
-    width: 25%;
+    width: 33.33333333%;
   }
 }
 @media screen and (min-width: 1200px) {
   .main-footer .footer-branding {
     position: absolute;
-    top: -100px;
+    top: -50px;
     right: 0;
   }
 }
 html.lt-ie9 .main-footer .footer-branding {
   position: absolute;
-  top: -100px;
+  top: -50px;
   right: 0;
 }
 .main-footer .footer-branding a {
@@ -4887,6 +4836,7 @@ body.admin-bar .hw-notification-wrapper {
   min-height: 1px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 15px;
   text-align: justify;
   text-align-last: center;
 }

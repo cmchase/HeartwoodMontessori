@@ -192,53 +192,53 @@
 /*------------------------------------*\
     Debug -- DELETE THIS
 \*------------------------------------*/
-body {
-	.sticky-header.scroll-up {
-		&::before {
-			content: "";
-			color: white;
-			top: 0;
-			left: 0;
-			position: fixed;
-			text-align: center;
-			width: 50px;
-			z-index: 9000;
-			content: 'sticky';
-			background-color: black;
-		}
-	}
-	&::after {
-		content: "";
-		color: white;
-		left: 0;
-		top: 0;
-		position: fixed;
-		text-align: center;
-		width: 50px;
-		z-index: 9000;
-		.media-xxs ({
-			content: "xxs";
-			background-color: red;
-		});
-		.media-xs({
-			content: "xs";
-			background-color: orange;
-		});
-		.media-sm({
-			content: "sm";
-			background-color: yellow;
-			color: black;
-		});
-		.media-md({
-			content: "md";
-			background-color: green;
-		});
-		.media-lg({
-			content: "default";
-			background-color: blue;
-		});
-	}
-}
+// body {
+// 	.sticky-header.scroll-up {
+// 		&::before {
+// 			content: "";
+// 			color: white;
+// 			top: 0;
+// 			left: 0;
+// 			position: fixed;
+// 			text-align: center;
+// 			width: 50px;
+// 			z-index: 9000;
+// 			content: 'sticky';
+// 			background-color: black;
+// 		}
+// 	}
+// 	&::after {
+// 		content: "";
+// 		color: white;
+// 		left: 0;
+// 		top: 0;
+// 		position: fixed;
+// 		text-align: center;
+// 		width: 50px;
+// 		z-index: 9000;
+// 		.media-xxs ({
+// 			content: "xxs";
+// 			background-color: red;
+// 		});
+// 		.media-xs({
+// 			content: "xs";
+// 			background-color: orange;
+// 		});
+// 		.media-sm({
+// 			content: "sm";
+// 			background-color: yellow;
+// 			color: black;
+// 		});
+// 		.media-md({
+// 			content: "md";
+// 			background-color: green;
+// 		});
+// 		.media-lg({
+// 			content: "default";
+// 			background-color: blue;
+// 		});
+// 	}
+// }
 
 
 
@@ -288,6 +288,10 @@ a {
 
 strong {
 	font-weight: 700;
+}
+
+iframe {
+	max-width: 100% !important;
 }
 
 article{
@@ -400,6 +404,9 @@ button {
 					font-size: 1.2em;
 					line-height: @header-height;
 					text-decoration: none;
+					&:hover {
+						background-color: @color-blue-dark;
+					}
 					.text-shadow(darken(@color-blue-dark, 15%));
 					.media-md({
 						padding: 0 1em;
@@ -821,11 +828,11 @@ button {
 	}
 	.footer-branding {
 		.make-xs-column(12);
-		.make-lg-column(3);
+		.make-lg-column(4);
 		text-align: center;
 		.media-lg({
 			position: absolute;
-			top: -100px;
+			top: -50px;
 			right: 0;
 		});
 		a {
@@ -1081,6 +1088,7 @@ body.admin-bar .hw-notification-wrapper {
 		.make-sm-column(12);
 		.make-md-column-offset(2);
 		.make-md-column(8);
+		margin-bottom: 15px;
 		text-align: justify;
 		text-align-last: center;
 		h1 {

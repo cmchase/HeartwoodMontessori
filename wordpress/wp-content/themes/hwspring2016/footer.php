@@ -23,7 +23,7 @@
 									<span class="icon"></span>(919) 461-8386
 								</li>
 								<li class="email">
-									<span class="icon"></span><a href="mailto: info@heartwoodmontessori.com">info@heartwoodmontessori.com</a>
+									<span class="icon"></span><a href="mailto:info@heartwoodmontessori.com">info@heartwoodmontessori.com</a>
 								</li>
 							</ul>
 

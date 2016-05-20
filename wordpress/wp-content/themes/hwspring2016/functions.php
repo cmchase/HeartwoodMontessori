@@ -83,7 +83,7 @@ function footer_nav()
 {
     wp_nav_menu(
     array(
-        'theme_location'  => 'header-navigation',
+        'theme_location'  => 'footer-navigation',
         'menu'            => '',
         'container'       => 'div',
         'container_class' => 'menu-{menu slug}-container',
