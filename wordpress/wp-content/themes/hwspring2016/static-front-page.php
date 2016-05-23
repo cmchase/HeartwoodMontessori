@@ -78,25 +78,25 @@
 			</article>
 
 			<article class="module module-1">
-				<a href="#">
+				<a href="<?php echo esc_url( get_permalink(10) ); ?>">
 					<img src="<?= get_template_directory_uri(); ?>/img/splash/module01.jpg">
 					<span class="caption">Tuition</span>
 				</a>
 			</article>
 			<article class="module module-2">
-				<a href="#">
+				<a href="<?php echo esc_url( get_permalink(27) ); ?>">
 					<img src="<?= get_template_directory_uri(); ?>/img/splash/module02.jpg">
 					<span class="caption">School Tour</span>
 				</a>
 			</article>
 			<article class="module module-3">
-				<a href="#">
+				<a href="<?php echo esc_url( get_permalink(279) ); ?>">
 					<img src="<?= get_template_directory_uri(); ?>/img/splash/module03.jpg">
-					<span class="caption">Programs</span>
+					<span class="caption">Why Heartwood</span>
 				</a>
 			</article>
 			<article class="module module-4">
-				<a href="#">
+				<a href="<?php echo esc_url( get_permalink(29) ); ?>">
 					<img src="<?= get_template_directory_uri(); ?>/img/splash/module04.jpg">
 					<span class="caption">Community</span>
 				</a>

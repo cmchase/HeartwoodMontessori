@@ -4309,6 +4309,12 @@ html.lt-ie9 .contact-section .info-col .telephone a:hover {
     width: 100%;
   }
 }
+.main-footer .nav .menu-category > a {
+  cursor: default;
+}
+.main-footer .nav .menu-category > a:hover {
+  text-decoration: none;
+}
 .main-footer .nav a {
   color: #fff;
   text-decoration: none;
@@ -4353,6 +4359,7 @@ html.lt-ie9 .contact-section .info-col .telephone a:hover {
   min-height: 1px;
   padding-left: 20px;
   padding-right: 20px;
+  pointer-events: none;
   text-align: center;
 }
 @media (min-width: 1200px) {
@@ -4374,7 +4381,8 @@ html.lt-ie9 .main-footer .footer-branding {
   right: 0;
 }
 .main-footer .footer-branding a {
-  display: block;
+  display: inline-block;
+  pointer-events: auto;
 }
 .main-footer .footer-branding img {
   height: auto;
@@ -5709,7 +5717,28 @@ body.page .post-sidebar {
     width: 25%;
   }
 }
-body.post-template-post-full .post-content {
+body.page-template-page-full .post-header {
+  text-align: center;
+  padding: 50px;
+}
+@media screen and (max-width: 991px) {
+  body.page-template-page-full .post-header {
+    padding: 10px;
+  }
+}
+body.page-template-page-full .post-header .post-title {
+  color: #6cacc4;
+  margin: 0;
+}
+body.page-template-page-full .post-header .post-author .author-intro {
+  color: #656263;
+  font-style: italic;
+  margin-right: 3px;
+}
+body.page-template-page-full .post-header .post-author .author-name {
+  font-weight: 700;
+}
+body.page-template-page-full .post-content {
   position: relative;
   min-height: 1px;
   padding-left: 20px;
@@ -5719,15 +5748,19 @@ body.post-template-post-full .post-content {
   margin-top: 20px;
 }
 @media (min-width: 768px) {
-  body.post-template-post-full .post-content {
+  body.page-template-page-full .post-content {
     float: left;
-    width: 100%;
+    width: 83.33333333%;
   }
 }
 @media (min-width: 992px) {
-  body.post-template-post-full .post-content {
-    margin-left: 0%;
+  body.page-template-page-full .post-content {
+    margin-left: 8.33333333%;
   }
+}
+body.page-template-page-full .post-content article > h2 {
+  color: #0e8015;
+  margin-top: 0;
 }
 .event-calendar body {
   background-color: transparent;

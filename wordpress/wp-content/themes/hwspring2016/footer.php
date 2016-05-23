@@ -3,8 +3,7 @@
 					<h1>Contact Heartwood</h1>
 					<div class="intro-col">
 						<h4>We'd love to hear from you!</h4>
-						<p>If any of your questions weren't answered by our <a>FAQs</a>, please
-						contact us and we'll be happy to talk.</p>
+						<p>We're always eager to answer questions &mdash; please contact us and we'll be happy to talk.</p>
 					</div>
 					<div class="form-col">
 						<?php echo do_shortcode('[contact-form-7 id="140" title="Footer Contact"]'); ?>
@@ -40,17 +39,12 @@
 					<?php footer_nav(); ?>
 
 					<div class="social-media">
-						<a href="http://www.facebook.com">
+						<a href="https://www.facebook.com/Heartwood-Montessori-School-146119348754602/" target="_blank">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/icons/logo-facebook.png"
 						</a>
-						<a href="http://www.instagram.com">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/icons/logo-instagram.png"
+						<a href="https://twitter.com/hwmontessori" target="_blank">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/icons/logo-twitter.png"
 						</a>
-						<a href="http://www.youtube.com">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/icons/logo-youtube.png"
-						</a
-						<a href="http://www.imgur.com"></a>
-						<a href="http://www.youtube.com"></a>
 					</div>
 				</nav>
 
