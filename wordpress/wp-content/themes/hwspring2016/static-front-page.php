@@ -72,13 +72,13 @@
 			<article class="main">
 					<h1>Our Philosophy</h1>
 
-					<p>The cornerstone of Heartwood's philosophy is the respect it has for its students and their cognitive, social and emotional development. We recognize that a child is more responsive to certain learning experiences at particular times in their development. By carefully looking for and respecting these "sensitive periods", teachers are able to maximize student learning while maintaining and even expanding the child's nature curiosity and interest in learning.</p>
+					<p>The cornerstone of Heartwood's philosophy is the respect it has for its students and their cognitive, social and emotional development. We recognize that a child is more responsive to certain learning experiences at particular times in their development. By carefully looking for and respecting these planes of development, teachers are able to maximize student learning while maintaining and even expanding the child's nature curiosity and interest in learning.</p>
 
 					<p>As practitioners of Peace Education, we believe that one of the most important roles a teacher plays is to provide an environment deliberately designed to promote the development of peaceful individuals and interactions.</p>
 			</article>
 
 			<article class="module module-1">
-				<a href="<?php echo esc_url( get_permalink(10) ); ?>">
+				<a href="<?php echo esc_url( get_permalink(12) ); ?>">
 					<img src="<?= get_template_directory_uri(); ?>/img/splash/module01.jpg">
 					<span class="caption">Tuition</span>
 				</a>
