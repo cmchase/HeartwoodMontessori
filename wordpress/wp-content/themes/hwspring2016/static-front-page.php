@@ -23,13 +23,13 @@
 				<h1>A Warm &amp; Welcoming
 				<span class="soft-break">Montessori Experience</span></h1>
 
-				<p>Heartwood Montessori School provides students with an authentic Montessori experience, including the Great Lessons.  Our certified teachers have prepared their classrooms with the full compliment of Montessori equipment at all levels.</p>
+				<p>Heartwood Montessori School is a child-centered community who focuses on providing an excellent, whole-child, Montessori education. Our classrooms are staffed with warm, caring, Montessori (American Montessori Society, or AMS)  certified teachers and equipped with the full complement of Montessori materials for their respective age groups.</p>
 
-				<p>Peace Education is at the <strong>HEART</strong> of our core curriculum.  Heartwood prides itself on the respect we show our students and the community we build with our families.</p>
+				<p>Peace Education is at the <strong>HEART</strong> of every aspect of our curriculum and it shows in the strong community we build among the students, parents and staff. Believing that a sense of respect for self, others, and the environment (wherever one finds oneself) is the surest path to peace, we attempt to model it in everything we do, from the way we interact with each other to the way the adults treat the materials in the classrooms, to the way we model conflict resolution to the children.</p>
 
 				<h1>Quality Education for Students 18 Months to 18 Years</h1>
 
-				<p>Heartwood Montessori School serves students aged 18 months to 18 years. In addition to the Montessori curriculum presented by our certified teachers, students are also provided lessons in art, movement, Spanish, Physical Education, YOGA, and opportunities for private music lessons with piano, violin, and guitar.</p>
+				<p>Heartwood Montessori School serves students aged 18 months to 18 years. In addition to the Montessori curriculum presented by our certified teachers, students participate in: Art, Physical Education, Yoga, Foreign Language (Spanish for 18 mos-12 year-olds) and Movement for the younger students. There are also private violin, guitar and piano lessons available on campus</p>
 
 			</article>
 			<article class="events-col">
@@ -50,11 +50,11 @@
 
 		<section class="splash-row-centered">
 			<article class="main">
-				<h1>Why Chose Heartwood Montessori</h1>
+				<h1>Why Choose Heartwood Montessori?</h1>
 
-				<p>At all levels and in all areas, <strong>Heartwood places the needs of the child first</strong>. The AMS credentialed staff believes that children, not subjects, are taught. We encourage children to learn through self-motivation within a carefully prepared environment. Our multi-age setting offers the child an opportunity to relate to, and work with others at his/her developmental level.</p>
+				<p>At all levels and in all areas, <strong>Heartwood places the needs of the child first</strong>.  The Montessori certified staff believe that we are teaching children, not lessons. We encourage students to be self-motivated and learn through interaction with the carefully prepared environment. Our multi-age setting offers the child an opportunity to work with other children at their same developmental level.</p>
 
-				<p>At Heartwood Montessori School you are truly part of a community of parents, students and teachers. We are here to support you and your family.</p>
+				<p>When you come to Heartwood Montessori School, you are truly a part of a community of parents, students and teachers who are all here to support you and your family!</p>
 			</article>
 		</section>
 
@@ -72,9 +72,9 @@
 			<article class="main">
 					<h1>Our Philosophy</h1>
 
-					<p>The cornerstone of Heartwood's philosophy is the respect it has for its students and their cognitive, social and emotional development. We recognize that a child is more responsive to certain learning experiences at particular times in their development. By carefully looking for and respecting these planes of development, teachers are able to maximize student learning while maintaining and even expanding the child's nature curiosity and interest in learning.</p>
+					<p>The cornerstone of Heartwood's philosophy is one that is at the root of Montessori philosophy: respect for the child and his/her cognitive, social and emotional development.  We recognize, as trained Montessorians, that children go through sensitive periods during which they are more open to receiving certain lessons and concepts.  By carefully looking for, recognizing and respecting these planes of development, teachers are able to maximize student learning while maintaining and even expanding the child’s natural curiosity about the world and interest in learning.</p>
 
-					<p>As practitioners of Peace Education, we believe that one of the most important roles a teacher plays is to provide an environment deliberately designed to promote the development of peaceful individuals and interactions.</p>
+					<p>As we are unceasingly engaged in Peace Education, we believe that one of the most important aspects of our school is that we provide an environment, both in the classroom and out, that encourages the development of peaceful individuals who engage in thoughtful, compassionate interactions with others.</p>
 			</article>
 
 			<article class="module module-1">

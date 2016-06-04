@@ -46,7 +46,7 @@ window.hw = {
 		};
 	},
 	createGoogleCalendar: function(viewWidth){
-		var calId = 'heartwoodmontessori.com_5m7fci1sql1nmfsp1dc3lk69n0%40group.calendar.google.com';
+		var calId = 'heartwoodmontessori.com_r04s3d3u5v0mk30fim7rlnr0fs%40group.calendar.google.com';
     var height = '600';
     var width = '100%';
     var bg = 'f6f6f6';
@@ -169,9 +169,9 @@ window.hw = {
 
 	sizeContent();
 
-	if ($('#googleCalendar').length > 0) {
-		$('#googleCalendar').html(hw.createGoogleCalendar(viewWidth));
-	}
+	// if ($('#googleCalendar').length > 0) {
+	// 	$('#googleCalendar').html(hw.createGoogleCalendar(viewWidth));
+	// }
 	window.addEventListener('resize', resizeCallback)
 	window.addEventListener('scroll', stickyHeader);
 

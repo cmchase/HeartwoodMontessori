@@ -1,6 +1,6 @@
 "use strict"
 var React = require('react');
-var EventListItem = require('./eventListItem') 
+var EventListItem = require('./eventListItem')
 var EventList = React.createClass({
   componentWillMount: function () {
     if (typeof window === 'undefined') {
@@ -11,7 +11,7 @@ var EventList = React.createClass({
         this.setState({ events: val})
       }.bind(this);
 
-      // Let's grab 10 events to give us a few extra to 
+      // Let's grab 10 events to give us a few extra to
       // work with just in case some aren't valid
       this.setState({
           events: gapiClient.listUpcomingEvents(10, set)
@@ -33,8 +33,8 @@ var EventList = React.createClass({
         var event = events[i];
 
         // Let's only add items that have valid start dates
-        if (Date.parse(event.start.dateTime)) { 
-          eventItems.push(<EventListItem key={event.etag} event={event} />);
+        if (Date.parse(event.start.dateTime)) {
+          eventItems.push(<EventListItem key={event.etag+i} event={event} />);
         };
 
         // If we've reach our limit, let's break out of our loop
@@ -52,7 +52,7 @@ var EventList = React.createClass({
           </a>
         </div>
       );
-    };    
+    };
   }
 });
 

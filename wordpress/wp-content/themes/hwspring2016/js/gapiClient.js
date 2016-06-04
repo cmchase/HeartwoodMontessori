@@ -13,8 +13,8 @@ function gapiOnLoadCallback() {
 
 var gapiClient = {
 	listUpcomingEvents: function(maxResults, callback) {
-		var request = gapi.client.calendar.events.list({			
-			  'calendarId': 'heartwoodmontessori.com_5m7fci1sql1nmfsp1dc3lk69n0@group.calendar.google.com',
+		var request = gapi.client.calendar.events.list({
+			  'calendarId': 'heartwoodmontessori.com_r04s3d3u5v0mk30fim7rlnr0fs@group.calendar.google.com',
 			  'timeMin': (new Date()).toISOString(),
 			  'showDeleted': false,
 			  'singleEvents': true,
