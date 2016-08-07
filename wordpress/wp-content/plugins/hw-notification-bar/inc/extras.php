@@ -14,7 +14,7 @@ if ( !defined( 'HW_NOTIFICATION_DIR' ) ) {
 
 
 function hw_notification_plugin_data() {
-	return get_plugin_data( HW_NOTIFICATION_DIR . 'hw-notification-bar.php' );
+	return get_plugin_data( HW_NOTIFICATION_DIR . 'hw-sticky-notification-bar.php' );
 }
 
 /**

@@ -1,6 +1,7 @@
 $ = jQuery = require('jquery');
 var React = require('react');
 var ReactDOM = require('react-dom');
+//var lightbox = require('lightbox2')
 
 var EventList = require('./components/EventList');
 
