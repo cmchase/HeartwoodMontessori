@@ -4755,6 +4755,7 @@ body.admin-bar .hw-notification-wrapper {
   font-weight: 700;
   margin-left: 60px;
   line-height: 1.1em;
+  min-height: 50px;
 }
 .splash-row-intro .events-col .activity-time {
   bottom: 0;
@@ -5035,6 +5036,7 @@ html.lt-ie9 .splash-row-modules .module {
   font-weight: 700;
   margin-left: 60px;
   line-height: 1.1em;
+  min-height: 50px;
 }
 .splash-row-posts .activity-time {
   bottom: 0;
@@ -5593,6 +5595,7 @@ body.single-post .post-sidebar {
   font-weight: 700;
   margin-left: 60px;
   line-height: 1.1em;
+  min-height: 50px;
 }
 .post-content .type-post .activity-time {
   bottom: 0;
@@ -5917,6 +5920,7 @@ body.page-template-page-full .post-content article > h2 {
   font-weight: 700;
   margin-left: 60px;
   line-height: 1.1em;
+  min-height: 50px;
 }
 .widget_hw_cal .activity-time {
   bottom: 0;
@@ -5946,10 +5950,11 @@ body.page-template-page-full .post-content article > h2 {
 .widget_hw_cal .icon:before {
   content: "\e109";
 }
-.search-input {
+form.search .search-input {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 6px 4px;
+  width: 60%;
 }
 .widget_hw_posts {
   display: none;
@@ -6063,6 +6068,7 @@ body.page-template-page-full .post-content article > h2 {
   font-weight: 700;
   margin-left: 60px;
   line-height: 1.1em;
+  min-height: 50px;
 }
 .widget_hw_posts .activity-time {
   bottom: 0;

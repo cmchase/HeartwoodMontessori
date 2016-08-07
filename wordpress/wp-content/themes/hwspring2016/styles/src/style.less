@@ -146,6 +146,7 @@
 		font-weight: 700;
 		margin-left: @size + 10px;
 		line-height: 1.1em;
+		min-height: 50px;
 	}
 	.activity-time{
 		bottom: 0;
@@ -1447,12 +1448,14 @@ body.page-template-page-full {
 		.glyphicon-calendar();
 	}
 }
+form.search {
+	.search-input {
+		border: 1px solid @color-gray-light;
 
-.search-input {
-	border: 1px solid @color-gray-light;
-
-	border-radius: 4px;
-	padding: 6px 4px;
+		border-radius: 4px;
+		padding: 6px 4px;
+		width: 60%;
+	}
 }
 
 .widget_hw_posts {

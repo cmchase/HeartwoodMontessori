@@ -95,13 +95,14 @@ window.hw = {
 			sizeContent();
 		}, 250);
 
-	$('#main-nav .menu-item-has-children').each(function(){
+	$('#main-nav .menu-item-has-children').each(function(event){
 		var $this = $(this);
 		// Let's watch for touch devices so
 		// we can show our dropdowns correctly
 		if ($('html').hasClass('touch')) {
-			$this.click(function(event){
-				if ($this.hasClass('hover')) {
+			$($this).on('touchstart', function(event){
+				if ($this.hasClass('hover') 
+						|| $('body').hasClass('nav-shown')) {
 					event.stopPropagation();
 					return true;
 				} else {

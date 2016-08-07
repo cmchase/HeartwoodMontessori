@@ -46,14 +46,15 @@ gulp.task('browserify', function() {
 });
 
 gulp.task('eslint', function(){
-	return gulp.src(config.paths.js)
-		.pipe(eslint({config: 'eslint.config.json'}))
-		.pipe(eslint.format());
+	// return gulp.src(config.paths.js)
+	// 	.pipe(eslint({config: 'eslint.config.json'}))
+	// 	.pipe(eslint.format());
 })
 
 // Linting needs to happen synchronously to ensure
 // checking of latest version.
 gulp.task('compile-js', function(){
+
 	runSequence('browserify', 'eslint');
 })
 

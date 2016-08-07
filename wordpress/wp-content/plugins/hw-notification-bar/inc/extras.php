@@ -6,6 +6,13 @@
 /**
  * Plugin Data
  */
+
+
+if ( !defined( 'HW_NOTIFICATION_DIR' ) ) {
+	define( 'HW_NOTIFICATION_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
+}
+
+
 function hw_notification_plugin_data() {
 	return get_plugin_data( HW_NOTIFICATION_DIR . 'hw-notification-bar.php' );
 }
