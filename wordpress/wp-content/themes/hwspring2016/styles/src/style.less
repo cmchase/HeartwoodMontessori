@@ -1423,11 +1423,24 @@ body.page-template-page-full {
 			margin-top: 0;
 		}
 	}
-}
-
-.event-calendar {
-	body {
+	&.event-calendar {
 		background-color: transparent;
+		.post-content {
+			.make-default-column(12);
+			.make-md-column-offset(0);
+			.agenda-view {
+				display: none;
+				.media-xs({
+					display: block;
+				});
+			}
+			.calendar-view {
+				display: block;
+				.media-xs({
+					display: none;
+				});
+			}
+		}
 	}
 }
 

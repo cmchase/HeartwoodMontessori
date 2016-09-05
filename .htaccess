@@ -117,6 +117,21 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
+
+
+
+# Maintenance Redirection
+# Uncomment first conditional to turn off the redirection
+# RewriteCond %{REQUEST_URI} ^$a
+
+RewriteCond %{REQUEST_URI} !maintenance.php
+RewriteCond %{REQUEST_FILENAME} !(styles|images).+$
+# Replace 555\.555\.555\.555 with your own IP address
+# RewriteCond %{REMOTE_ADDR} !^555\.555\.555\.555$
+# RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
+RewriteRule (.*) /maintenance.php [R,L]
+
+
 </IfModule>
 
 # END WordPress

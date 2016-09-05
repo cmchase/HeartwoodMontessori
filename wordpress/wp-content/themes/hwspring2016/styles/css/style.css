@@ -5770,8 +5770,41 @@ body.page-template-page-full .post-content article > h2 {
   color: #0e8015;
   margin-top: 0;
 }
-.event-calendar body {
+body.page-template-page-full.event-calendar {
   background-color: transparent;
+}
+body.page-template-page-full.event-calendar .post-content {
+  position: relative;
+  min-height: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  body.page-template-page-full.event-calendar .post-content {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  body.page-template-page-full.event-calendar .post-content {
+    margin-left: 0%;
+  }
+}
+body.page-template-page-full.event-calendar .post-content .agenda-view {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  body.page-template-page-full.event-calendar .post-content .agenda-view {
+    display: block;
+  }
+}
+body.page-template-page-full.event-calendar .post-content .calendar-view {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  body.page-template-page-full.event-calendar .post-content .calendar-view {
+    display: none;
+  }
 }
 /*------------------------------------*\
     Sidebars

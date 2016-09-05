@@ -1,0 +1,113 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Clearings
+2.0 - Admin Wrapper
+3.0 - Forms
+4.0 - Easytabs
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 - Clearings
+--------------------------------------------------------------*/
+.hw-notification-admin-wrapper:before,
+.hw-notification-admin-wrapper:after,
+.hw-notification-info:before,
+.hw-notification-info:after,
+.hw-notification-info-inside:before,
+.hw-notification-info-inside:after {
+  content: '';
+  display: table;
+}
+.hw-notification-admin-wrapper:after,
+.hw-notification-info:after,
+.hw-notification-info-inside:after {
+  clear: both;
+}
+
+/*--------------------------------------------------------------
+2.0 - Admin Wrapper
+--------------------------------------------------------------*/
+.hw-notification-admin-wrapper {
+	margin: 10px 0;
+	width: 98%;
+}
+
+.hw-notification-header {
+	background: #f9f9f9;
+	border: 1px solid #e1e1e1;
+	border-bottom: none;
+	margin: 25px 0 0;
+}
+.hw-notification-header-inside {
+	padding: 25px;
+}
+.hw-notification-header h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.hw-notification-info {
+	background: #f9f9f9;
+	border: 1px solid #e1e1e1;
+	margin: 0 0 25px;
+}
+.hw-notification-info-inside {
+	padding: 25px;
+}
+.hw-notification-info ul {
+	list-style: none;
+	margin: 0;
+	padding: 00;
+}
+.hw-notification-info ul li {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+div.updated {
+	margin: 25px 0 0 0;
+}
+
+/*--------------------------------------------------------------
+3.0 - Forms
+--------------------------------------------------------------*/
+.hw-notification-form-wrapper {
+	margin: 0;
+	padding: 0;
+}
+.hw-notification-form-wrapper input[type="text"] {
+	width: 80%;
+}
+.hw-notification-form-wrapper select {
+	width: 25%;
+}
+.hw-notification-form-header {
+	background: #e1e1e1;
+	border: 1px solid #e1e1e1;
+	border-bottom: none;
+  color: #fff;
+	margin: 0;
+}
+.hw-notification-form-header-inside {
+	padding: 10px 25px;
+}
+.hw-notification-form-footer {
+	background: #f9f9f9;
+	border: 1px solid #e1e1e1;
+	border-top: none;
+	margin: 0 0 25px;
+	text-align: right;
+}
+.hw-notification-form-footer-inside {
+	padding: 25px;
+}
+
+.panel-container:after {
+  clear: both;
+}
+.panel-container {
+	background: #fff;
+	border: 1px solid #e1e1e1;
+  padding: 10px 25px;
+}
