@@ -105,7 +105,7 @@
 
 		<section class="splash-row-posts">
 			<header>
-				<h1>Recent News</h1>
+				<h1>Recent Blog Posts</h1>
 			</header>
 			<?php
 				query_posts('showposts=4&category_name=spotlight&orderby=date&order=desc');
@@ -144,7 +144,7 @@
 						</li>
 		 			<?php endif; endwhile; ?>
 					</ul>
-					<a href="#" class="activity-more">
+					<a href="<?php echo esc_url( get_permalink(135) ); ?>" class="activity-more">
 						<span class="icon"></span>View All News
 					</a>
 
